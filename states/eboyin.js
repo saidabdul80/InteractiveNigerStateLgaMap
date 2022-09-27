@@ -103,4 +103,15 @@ let ebo_sketch = `
      eboyin.sketchMap(ebo_sketch)            
  $(document).ready(function(){    
      eboyin.CalMap(eboyin.propertyMaker());
+     eboyin.modProperty(`${ebo_cont_id}_ngjs1`,"hover",`
+        <ul>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+        </ul>
+     `);
+
+     eboyin.setProperty('upColor',"#E1F3FC")
+  
  })

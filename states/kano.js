@@ -135,7 +135,7 @@ let k_sketch = `
      kano.sketchMap(k_sketch)            
  $(document).ready(function(){    
      kano.CalMap(kano.propertyMaker());
-
+//---------------------------------------------------------
      kano.modProperty(`${kan_cont_id}_ngjs1`,"hover",`
         <ul>
             <li>Climate Change: 20%</li>
@@ -146,5 +146,5 @@ let k_sketch = `
      `);
 
      kano.setProperty('upColor',"#E1F3FC")
-     
+//------------------------------------------------   
  })
