@@ -16,6 +16,12 @@ class MakeMap{
 modProperty(index,name, value){
     this.property[index][name] = value
 }
+setProperty(name, value){
+    let $this = this;
+    Object.keys(this.property).map((item,i,arr)=>{        
+        $this.property[item][name] = value;
+     })
+}
 CalMap(ngjsconfig){     
     let p = this.p
     let ngjsconfig2 =[]; 

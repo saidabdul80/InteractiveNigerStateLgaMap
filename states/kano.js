@@ -47,7 +47,7 @@ let k_sketch = `
                 .kfil3 {fill:#373435}
                 .kfil4 {fill:#373435}
                 .kfil0 {fill:#555253}
-                .kfil1 {fill:#FFFBD6}
+                .kfil1 {fill:#E1F3FC}
                 .fnt2 {font-weight:bold;font-size:39.29px;font-family:'Open Sans Condensed'}
                 .fnt0 {font-weight:bold;font-size:42.86px;font-family:'Open Sans Condensed'}
                 .fnt1 {font-weight:bold;font-size:54.88px;font-family:'Open Sans Condensed'}
@@ -135,5 +135,16 @@ let k_sketch = `
      kano.sketchMap(k_sketch)            
  $(document).ready(function(){    
      kano.CalMap(kano.propertyMaker());
-     kano.modProperty(`${kan_cont_id}_ngjs1`,"hover",12);
+
+     kano.modProperty(`${kan_cont_id}_ngjs1`,"hover",`
+        <ul>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+            <li>Climate Change: 20%</li>
+        </ul>
+     `);
+
+     kano.setProperty('upColor',"#E1F3FC")
+     
  })
