@@ -1,6 +1,6 @@
 //width:100%;height:98vh;"
 let cont_id = "zamfaraId"
-let sketch = `
+let abuja_sketch = `
 <h1></h1>
      <span id="jstip" class="jstip"></span>
         <div id="mapwrapper">
@@ -10,8 +10,8 @@ let sketch = `
             <div>
         </div>
      `;
-     let zamfara = new MakeMap(cont_id)
-     zamfara.sketchMap(k_sketch)            
+     let abuja = new MakeMap(cont_id)
+     abuja.sketchMap(abuja_sketch)            
  $(document).ready(function(){    
-     zamfara.CalMap(zamfara.propertyMaker());
+     abuja.CalMap(abuja.propertyMaker());
  })

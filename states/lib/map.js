@@ -2,9 +2,9 @@
 class MakeMap{
 
     constructor(cont_id, p = {config:[], pins_config:[]}){
-        this.cont_id = cont_id,
-        
+        this.cont_id = cont_id,        
         this.p = p
+        this.property ={}
     }
  sketchMap(sketch){
     if(this.cont_id==''){    
@@ -13,12 +13,15 @@ class MakeMap{
            $("#"+this.cont_id).html(sketch);
        }
 }
-
+modProperty(index,name, value){
+    this.property[index][name] = value
+}
 CalMap(ngjsconfig){     
     let p = this.p
     let ngjsconfig2 =[]; 
     let pins_config2 = [];    
     let $this = this;
+    this.property = ngjsconfig;    
     if(p.hasOwnProperty("config")){
         ngjsconfig2 = p.config;   
       }
@@ -26,8 +29,9 @@ CalMap(ngjsconfig){
     if(p.hasOwnProperty("pins_config")){
       pins_config2 = p.pins_config;
     }
+
      
-  /* var ngjsconfig = {
+  /* var this.property = {
       [$this.cont_id+"_ngjs1"]:{
           "hover": "ABIA",
           "url": "",
@@ -284,25 +288,25 @@ CalMap(ngjsconfig){
           itx = $this.cont_id+"_ngjs"+item.state; 
           if(item.hasOwnProperty("hover")){
               
-              ngjsconfig[itx].hover = item.hover
+              this.property[itx].hover = item.hover
           }   
           if(item.hasOwnProperty("url")){
-              ngjsconfig[itx].url = item.url
+              this.property[itx].url = item.url
           } 
           if(item.hasOwnProperty("target")){
-              ngjsconfig[itx].target = item.target
+              this.property[itx].target = item.target
           } 
           if(item.hasOwnProperty("upColor")){
-              ngjsconfig[itx].upColor = item.upColor
+              this.property[itx].upColor = item.upColor
           } 
           if(item.hasOwnProperty("overColor")){
-              ngjsconfig[itx].overColor = item.overColor
+              this.property[itx].overColor = item.overColor
           }   
           if(item.hasOwnProperty("downColor")){
-              ngjsconfig[itx].downColor = item.downColor
+              this.property[itx].downColor = item.downColor
           }   
           if(item.hasOwnProperty("active")){
-              ngjsconfig[itx].active = item.active
+              this.property[itx].active = item.active
           }            
       }else{
           throw new Error('undefined state in config index '+ i)
@@ -326,47 +330,47 @@ CalMap(ngjsconfig){
       var arr = id.split("");
       var _Textobj = jQuery("#" + id + "," + "#"+$this.cont_id+"_ngjsvn" + arr.slice(4).join(""));      
       jQuery("#" +$this.cont_id+ [ "_visnames" ]).attr({
-          fill: ngjsconfig.general.visibleNames
+          fill: this.property.general.visibleNames
       });
       _obj.attr({
-          fill: ngjsconfig[id].upColor,
-          stroke: ngjsconfig.general.borderColor
+          fill: $this.property[id].upColor,
+          stroke: $this.property.general.borderColor
       });
       _Textobj.attr({
           cursor: "default"
       });
-      if (ngjsconfig[id].active === !0) {
+      if ($this.property[id].active === !0) {
           _Textobj.attr({
               cursor: "pointer"
           });
           _Textobj.hover(function() {            
-              jQuery("#"+$this.cont_id+"_jstip").show().html(ngjsconfig[id].hover);
+              jQuery("#"+$this.cont_id+"_jstip").show().html($this.property[id].hover);
               _obj.css({
-                  fill: ngjsconfig[id].overColor
+                  fill: $this.property[id].overColor
               });
           }, function() {
               jQuery("#"+$this.cont_id+"_jstip").hide();
               jQuery("#" + id).css({
-                  fill: ngjsconfig[id].upColor
+                  fill: $this.property[id].upColor
               });
           });
-          if (ngjsconfig[id].target !== "none") {
+          if ($this.property[id].target !== "none") {
               _Textobj.mousedown(function() {
                   jQuery("#" + id).css({
-                      fill: ngjsconfig[id].downColor
+                      fill: $this.property[id].downColor
                   });
               });
           }
           _Textobj.mouseup(function() {
               jQuery("#" + id).css({
-                  fill: ngjsconfig[id].overColor
+                  fill: $this.property[id].overColor
               });
-              if (ngjsconfig[id].target === "new_window") {
-                  window.open(ngjsconfig[id].url);
-              } else if (ngjsconfig[id].target === "same_window") {
-                  window.parent.location.href = ngjsconfig[id].url;
-              } else if (ngjsconfig[id].target === "modal") {
-                  jQuery(ngjsconfig[id].url).modal("show");
+              if ($this.property[id].target === "new_window") {
+                  window.open($this.property[id].url);
+              } else if ($this.property[id].target === "same_window") {
+                  window.parent.location.href = $this.property[id].url;
+              } else if ($this.property[id].target === "modal") {
+                  jQuery($this.property[id].url).modal("show");
               }
           });
           _Textobj.mousemove(function(e) {
@@ -385,9 +389,9 @@ CalMap(ngjsconfig){
                   var tipw = jQuery("#"+$this.cont_id+"_jstip").outerWidth(), tiph = jQuery("#"+$this.cont_id+"_jstip").outerHeight(), x = x + tipw > jQuery(document).scrollLeft() + jQuery(window).width() ? x - tipw - 20 * 2 : x;
                   y = y + tiph > jQuery(document).scrollTop() + jQuery(window).height() ? jQuery(document).scrollTop() + jQuery(window).height() - tiph - 10 : y;
                   jQuery("#" + id).css({
-                      fill: ngjsconfig[id].downColor
+                      fill: $this.property[id].downColor
                   });
-                  jQuery("#"+$this.cont_id+"_jstip").show().html(ngjsconfig[id].hover);
+                  jQuery("#"+$this.cont_id+"_jstip").show().html($this.property[id].hover);
                   jQuery("#"+$this.cont_id+"_jstip").css({
                       left: x,
                       top: y
@@ -395,14 +399,14 @@ CalMap(ngjsconfig){
               });
               _Textobj.on("touchend", function() {
                   jQuery("#" + id).css({
-                      fill: ngjsconfig[id].upColor
+                      fill: $this.property[id].upColor
                   });
-                  if (ngjsconfig[id].target === "new_window") {
-                      window.open(ngjsconfig[id].url);
-                  } else if (ngjsconfig[id].target === "same_window") {
-                      window.parent.location.href = ngjsconfig[id].url;
-                  } else if (ngjsconfig[id].target === "modal") {
-                      jQuery(ngjsconfig[id].url).modal("show");
+                  if ($this.property[id].target === "new_window") {
+                      window.open($this.property[id].url);
+                  } else if ($this.property[id].target === "same_window") {
+                      window.parent.location.href = $this.property[id].url;
+                  } else if ($this.property[id].target === "modal") {
+                      jQuery($this.property[id].url).modal("show");
                   }
               });
           }
@@ -470,7 +474,7 @@ CalMap(ngjsconfig){
               objtx.overColor = item.target
           }  
           if(item.hasOwnProperty("active")){
-              ngjsconfig[itx].active = item.active
+              this.property[itx].active = item.active
           }            
       }else{
           throw new Error('undefined state in config index '+ i)
