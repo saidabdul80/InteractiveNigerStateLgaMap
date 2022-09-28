@@ -74,11 +74,11 @@ let abuja_sketch = `
             <div>
         </div>
      `;
-     let abuja = new MakeMapabj_(cont_id)
+     let abuja = new MakeMapabj_(abj_cont_id)
      abuja.sketchMap(abuja_sketch)            
  $(document).ready(function(){    
      abuja.CalMap(abuja.propertyMaker());
-     abuja.modProperty(`${cont_id}_ngjs1`,"hover",`
+     abuja.modProperty(`${abj_cont_id}_ngjs1`,"hover",`
      <ul>
          <li>Climate Change: 20%</li>
          <li>Climate Change: 20%</li>
