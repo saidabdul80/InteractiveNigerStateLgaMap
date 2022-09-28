@@ -74,7 +74,7 @@ let abuja_sketch = `
             <div>
         </div>
      `;
-     let abuja = new MakeMapabj_(abj_cont_id)
+     let abuja = new MakeMap(abj_cont_id)
      abuja.sketchMap(abuja_sketch)            
  $(document).ready(function(){    
      abuja.CalMap(abuja.propertyMaker());
