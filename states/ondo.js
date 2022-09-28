@@ -51,7 +51,7 @@ let ondo_sketch = `
                     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                     .str0ondo {stroke:#373435;stroke-width:3.25;stroke-miterlimit:2.61313}
                     .fil2ondo {fill:none}
-                    .fil1ondo {fill:#E6E7E8}
+                    /* .fil1ondo {fill:#E6E7E8} */
                     .fil3ondo {fill:#373435}
                     .fil0ondo {fill:#585959}
                     .fnt0ondo {font-weight:bold;font-size:54.66px;font-family:'Arial'}
@@ -119,4 +119,13 @@ let ondo_sketch = `
      ondo.sketchMap(ondo_sketch)            
  $(document).ready(function(){    
      ondo.CalMap(ondo.propertyMaker());
+     ondo.modProperty(`${ond_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  ondo.setProperty('upColor',"#E1F3FC")
  })

@@ -53,7 +53,7 @@ let ogu_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial Rounded MT Bold";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-                .fil1ogu {fill:#E6E7E8}
+                /* .fil1ogu {fill:#E6E7E8} */
                 .fil2ogu {fill:#373435}
                 .fil0ogu {fill:#434440}
                 .fil3ogu {fill:#373435;fill-rule:nonzero}
@@ -143,4 +143,13 @@ let ogu_sketch = `
      ogun.sketchMap(ogu_sketch)            
  $(document).ready(function(){    
      ogun.CalMap(ogun.propertyMaker());
+     ogun.modProperty(`${ogu_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  ogun.setProperty('upColor',"#E1F3FC")
  })

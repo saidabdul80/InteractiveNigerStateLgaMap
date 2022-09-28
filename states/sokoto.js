@@ -46,7 +46,7 @@ viewBox="0 0 5192.26 4503.15"
     .sokstr0 {stroke:#858474;stroke-width:16.19;stroke-miterlimit:22.9256}
     .sokfil1 {fill:#373435}
     .sokfil2 {fill:#373435}
-    .sokfil0 {fill:#FFFBD6}
+    /* .sokfil0 {fill:#FFFBD6} */
     .sokfnt0 {font-weight:bold;font-size:107.91px;font-family:'Sans Condensed'}
    ]]>
   </style>
@@ -114,4 +114,13 @@ viewBox="0 0 5192.26 4503.15"
      sokoto.sketchMap(sok_sketch)            
  $(document).ready(function(){    
      sokoto.CalMap(sokoto.propertyMaker());
+     sokoto.modProperty(`${sok_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  sokoto.setProperty('upColor',"#E1F3FC")
  })

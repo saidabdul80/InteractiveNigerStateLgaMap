@@ -53,7 +53,7 @@ let anam_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .str0anam {stroke:#373435;stroke-width:1.42;stroke-miterlimit:2.61313}
                 .fil2anam {fill:none}
-                .fil1anam {fill:#E6E7E8}
+                /* .fil1anam {fill:#E6E7E8} */
                 .fil0anam {fill:#848688}
                 .fil4anam {fill:#373435}
                 .fil3anam {fill:#373435;fill-rule:nonzero}
@@ -136,4 +136,13 @@ let anam_sketch = `
      anambara.sketchMap(anam_sketch)            
  $(document).ready(function(){    
      anambara.CalMap(anambara.propertyMaker());
+     anambara.modProperty(`${anam_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  anambara.setProperty('upColor',"#E1F3FC")
  })

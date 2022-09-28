@@ -51,7 +51,7 @@ let del_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1del {fill:#F1F1F2}
+                /* .fil1del {fill:#F1F1F2} */
                 .fil2del {fill:#E6E7E8}
                 .fil0del {fill:#96989A}
                 .fil5del {fill:#373435}
@@ -159,4 +159,13 @@ let del_sketch = `
      delta.sketchMap(del_sketch)            
  $(document).ready(function(){    
      delta.CalMap(delta.propertyMaker());
+     delta.modProperty(`${del_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  delta.setProperty('upColor',"#E1F3FC")
  })

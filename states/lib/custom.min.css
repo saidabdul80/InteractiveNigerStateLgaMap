@@ -1309,3 +1309,21 @@ textarea {
         height: 500px
     }
 }
+
+.options {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+  }
+  
+  select {
+    font-size: 14px;
+    border: 1px solid #bbb;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    height: 36px;
+  }
+
+  svg{
+    height: 65vh !important;
+  }

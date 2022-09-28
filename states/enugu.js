@@ -50,7 +50,7 @@ let enugu_sketch = `
                 <style type="text/css">
                 <![CDATA[
                     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-                    .fil1enu {fill:#E6E7E8}
+                    /* .fil1enu {fill:#E6E7E8} */
                     .fil2enu {fill:#373435}
                     .fil0enu {fill:#666666}
                     .fnt0enu {font-weight:normal;font-size:57.06px;font-family:'Arial'}
@@ -107,4 +107,13 @@ let enugu_sketch = `
      enugu.sketchMap(enugu_sketch)            
  $(document).ready(function(){    
      enugu.CalMap(enugu.propertyMaker());
+     enugu.modProperty(`${enug_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  enugu.setProperty('upColor',"#E1F3FC")
  })

@@ -56,7 +56,7 @@ let adam_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .adamstr0 {stroke:#373435;stroke-width:1.29;stroke-miterlimit:2.61313}
                 .adamfil2 {fill:none}
-                .adamfil1 {fill:#E6E7E8}
+                /* .adamfil1 {fill:#E6E7E8} */
                 .adamfil0 {fill:#373435}
                 .adamfnt0 {font-weight:bold;font-size:31.08px;font-family:'Arial'}
                ]]>
@@ -128,4 +128,13 @@ let adam_sketch = `
      adamawa.sketchMap(adam_sketch)            
  $(document).ready(function(){    
      adamawa.CalMap(adamawa.propertyMaker());
+     adamawa.modProperty(`${adamcont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  adamawa.setProperty('upColor',"#E1F3FC")
  })

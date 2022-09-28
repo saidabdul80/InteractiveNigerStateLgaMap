@@ -52,7 +52,7 @@ let taraba_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .fil2tar {fill:#373435}
                 .fil0tar {fill:#383436}
-                .fil1tar {fill:#E4E6E7}
+                /* .fil1tar {fill:#E4E6E7} */
                 .fnt0tar {font-weight:bold;font-size:29.07px;font-family:'Arial'}
                ]]>
               </style>

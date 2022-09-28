@@ -57,7 +57,7 @@ let bau_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1 {fill:#E6E7E8}
+                /* .fil1 {fill:#E6E7E8} */
                 .fil2 {fill:#373435}
                 .fil0 {fill:#96989A;fill-rule:nonzero}
                 .fnt0 {font-weight:bold;font-size:32.31px;font-family:'Arial'}
@@ -123,4 +123,14 @@ let bau_sketch = `
      bauchi.sketchMap(bau_sketch)            
  $(document).ready(function(){    
      bauchi.CalMap(bauchi.propertyMaker());
+
+     bauchi.modProperty(`${bau_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  bauchi.setProperty('upColor',"#E1F3FC")
  })

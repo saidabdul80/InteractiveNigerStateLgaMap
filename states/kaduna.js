@@ -55,7 +55,7 @@ let kad_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .str0kad {stroke:#373435;stroke-width:1.33;stroke-miterlimit:2.61313}
                 .fil2kad {fill:none}
-                .fil1kad {fill:#E6E7E8}
+                /* .fil1kad {fill:#E6E7E8} */
                 .fil4kad {fill:#373435}
                 .fil0kad {fill:#3A3A3A}
                 .fil3kad {fill:#373435;fill-rule:nonzero}
@@ -142,4 +142,13 @@ let kad_sketch = `
      kaduna.sketchMap(kad_sketch)            
  $(document).ready(function(){    
      kaduna.CalMap(kaduna.propertyMaker());
+     kaduna.modProperty(`${kad_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  kaduna.setProperty('upColor',"#E1F3FC")
  })

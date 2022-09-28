@@ -55,7 +55,7 @@ let abi_sketch = `
                 .abifil2 {fill:none}
                 .abifil3 {fill:#373435}
                 .abifil0 {fill:#373435}
-                .abifil1 {fill:#E5E6E7}
+                /* .abifil1 {fill:#E5E6E7} */
                 .abifnt2 {font-weight:bold;font-size:24.51px;font-family:'Arial'}
                 .abifnt1 {font-weight:bold;font-size:25.07px;font-family:'Arial'}
                 .abifnt0 {font-weight:bold;font-size:26.83px;font-family:'Arial'}
@@ -125,4 +125,13 @@ let abi_sketch = `
      abia.sketchMap(abi_sketch)            
  $(document).ready(function(){    
      abia.CalMap(abia.propertyMaker());
+     abia.modProperty(`${abi_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  abia.setProperty('upColor',"#E1F3FC")
  })

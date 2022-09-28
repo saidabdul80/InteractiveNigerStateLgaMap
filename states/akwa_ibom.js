@@ -77,7 +77,7 @@ let akw_sketch = `
                 @font-face { font-family:"Tw Cen MT";font-variant:normal;font-weight:bold;src:url("#FontID3") format(svg)}
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID1") format(svg)}
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .akwfil1 {fill:#E6E7E8}
+                /* .akwfil1 {fill:#E6E7E8} */
                 .fil0akw {fill:#96989A}
                 .fil2akw {fill:#373435}
                 .akwfont0 {font-weight:bold;font-size:40px;font-family:'Arial'}
@@ -172,4 +172,14 @@ let akw_sketch = `
      akwaIbom.sketchMap(akw_sketch)            
  $(document).ready(function(){    
      akwaIbom.CalMap(akwaIbom.propertyMaker());
+
+     akwaIbom.modProperty(`${akw_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  akwaIbom.setProperty('upColor',"#E1F3FC")
  })

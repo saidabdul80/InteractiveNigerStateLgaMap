@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">    
+    <script type="text/javascript" src="states/lib/jquery.js"></script>	
+	<script type="text/javascript" src="states/lib/map.js"></script>
+</head>
+<body>
+    
+    <div id="abiaId"></div>
+<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
+    <select id="selectD">
+        <option value=""></option>
+        <option value="Aro">Arochukwu	</option>
+        <option value="Ini">Ini	</option>
+        <option value="Obi">Obi Ngwa	</option>
+        <option value="Umus">Umuahia South	</option>
+        <option value="Umun">Umuahia North	</option>
+        <option value="Ikw">Ikwuano	</option>
+        <option value="Isi">Isiukwato	</option>
+        <option value="Ukww">Ukwa West	</option>
+        <option value="Abas">Aba South	</option>
+        <option value="Aban">Aba North	</option>
+        <option value="Isin">Isiala Ngwa North	</option>
+        <option value="Isis">Isiala Ngwa South	</option>
+        <option value="Obi">Obingwa	</option>
+        <option value="Umunn">Umunneochi	</option>
+        <option value="Ugw">Ugwunagbo	</option>
+        <option value="Ukw">Ukwa </option>       
+    </select>
+    <div id="output" style="padding:20px"></div>
+</div>
+<script>
+    let aData = {
+        "Aro":{
+            "Climate Change": "30%",
+            "Climate Change2": "30%",
+            "Climate Change3": "30%",
+        },
+        "Ini":{
+            "Climate Change": "30%",
+        },
+        "Obi":{
+            "Climate Change": "30%",
+        },
+        "Umus":{
+            "Climate Change": "30%",
+        },
+        "Umun":{
+            "Climate Change": "30%",
+        },
+        "Ikw":{
+            "Climate Change": "30%",
+        },
+        "Isi":{
+            "Climate Change": "30%",
+        },
+        "Ukww":{
+            "Climate Change": "30%",
+        },
+        "Abas":{
+            "Climate Change": "30%",
+        },
+        "Aban":{
+            "Climate Change": "30%",
+        },
+        "Isin":{
+            "Climate Change": "30%",
+        },
+        "Isis":{
+            "Climate Change": "30%",
+        },
+        "Obi":{
+            "Climate Change": "30%",
+        },
+        "Umunn":{
+            "Climate Change": "30%",
+        },
+        "Ugw":{
+            "Climate Change": "30%",
+        },
+        "Ukw":{
+            "Climate Change": "30%",
+        },
+    }
+
+    $(document).ready(function(){
+        $("#selectD").change(function(){
+            let arr = aData[$(this).val()]            
+            let html = "<table><tbody>"
+            Object.keys(arr).forEach((item)=>{                
+                html += `<tr>
+                        <td>${item}</td>
+                        <td>${arr[item]}</td>
+                    </tr>`
+            })
+            html += "</tbody></table>";
+            $("#output").html(html)            
+        })
+
+    })
+</script>
+<script type="text/javascript" src="states/abia.js"></script>    
+</body>
+</html>

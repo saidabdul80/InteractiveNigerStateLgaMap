@@ -54,7 +54,7 @@ let kog_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial Rounded MT Bold";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-                .fil1kog {fill:#E6E7E8}
+                /* .fil1kog {fill:#E6E7E8} */
                 .fil3kog {fill:#373435}
                 .fil0kog {fill:#434440}
                 .fil2kog {fill:#373435;fill-rule:nonzero}
@@ -141,4 +141,13 @@ let kog_sketch = `
      kogi.sketchMap(kog_sketch)            
  $(document).ready(function(){    
      kogi.CalMap(kogi.propertyMaker());
+     kogi.modProperty(`${kog_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  kogi.setProperty('upColor',"#E1F3FC")
  })

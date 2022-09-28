@@ -46,7 +46,7 @@ let c_sketch = `
      @font-face { font-family:"Open Sans Condensed";font-variant:normal;font-style:normal;font-weight:bold;src:url("#${c_cont_id}_FontID0") format(svg)}
      .cfil1 {fill:#4B4B4D}
      .cfil2 {fill:#373435}
-     .cfil0 {fill:#FFFBD6}
+     /* .cfil0 {fill:#FFFBD6} */
      .cfil3 {fill:#373435;fill-rule:nonzero}
      .fnt1 {font-weight:bold;font-size:40.25px;font-family:'Open Sans Condensed'}
      .fnt2 {font-weight:bold;font-size:42.25px;font-family:'Open Sans Condensed'}
@@ -123,4 +123,13 @@ let c_sketch = `
     calabar.sketchMap(c_sketch)            
 $(document).ready(function(){    
     calabar.CalMap(calabar.propertyMaker());
+    calabar.modProperty(`${c_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  calabar.setProperty('upColor',"#E1F3FC")
 })

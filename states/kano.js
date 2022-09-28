@@ -43,11 +43,10 @@ let k_sketch = `
                 @font-face { font-family:"Open Sans Condensed";font-variant:normal;font-style:normal;font-weight:bold;src:url("#${kan_cont_id}_FontID0") format(svg)}
                 .str0 {stroke:#858474;stroke-width:5;stroke-miterlimit:2.61313}
                 .str1 {stroke:#858474;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313}
-                .kfil2 {fill:#FEFEFE}
+                
                 .kfil3 {fill:#373435}
                 .kfil4 {fill:#373435}
                 .kfil0 {fill:#555253}
-                .kfil1 {fill:#E1F3FC}
                 .fnt2 {font-weight:bold;font-size:39.29px;font-family:'Open Sans Condensed'}
                 .fnt0 {font-weight:bold;font-size:42.86px;font-family:'Open Sans Condensed'}
                 .fnt1 {font-weight:bold;font-size:54.88px;font-family:'Open Sans Condensed'}
@@ -145,6 +144,7 @@ let k_sketch = `
         </ul>
      `);
 
+     kano.setProperty('upColor',"#E1F3FC !important")
      kano.setProperty('upColor',"#E1F3FC")
 //------------------------------------------------   
  })

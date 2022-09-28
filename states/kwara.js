@@ -54,7 +54,7 @@ let kwara_sketch = `
                 .str0kwar {stroke:#373435;stroke-width:1.98;stroke-miterlimit:2.61313}
                 .str1kwar {stroke:#373435;stroke-width:0.86;stroke-miterlimit:2.61313}
                 .fil3kwar {fill:none}
-                .fil1kwar {fill:#E6E7E8}
+                /* .fil1kwar {fill:#E6E7E8} */
                 .fil2kwar {fill:#373435}
                 .fil0kwar {fill:#363837}
                 .fnt0kwar {font-weight:bold;font-size:67.91px;font-family:'Arial'}
@@ -122,4 +122,13 @@ let kwara_sketch = `
      kwara.sketchMap(kwara_sketch)            
  $(document).ready(function(){    
      kwara.CalMap(kwara.propertyMaker());
+     kwara.modProperty(`${kwar_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  kwara.setProperty('upColor',"#E1F3FC")
  })

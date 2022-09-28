@@ -46,7 +46,7 @@ let nasarawa_sketch = `
                 <style type="text/css">
                 <![CDATA[
                     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                    .fil2nasa {fill:#E6E7E8}
+                    /* .fil2nasa {fill:#E6E7E8} */
                     .fil1nasa {fill:#96989A}
                     .fil3nasa {fill:#373435}
                     .fil0nasa {fill:#E6E7E8;fill-rule:nonzero}
@@ -102,4 +102,13 @@ let nasarawa_sketch = `
      nasarawa.sketchMap(nasarawa_sketch)            
  $(document).ready(function(){    
      nasarawa.CalMap(nasarawa.propertyMaker());
+     nasarawa.modProperty(`${nasa_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  nasarawa.setProperty('upColor',"#E1F3FC")
  })

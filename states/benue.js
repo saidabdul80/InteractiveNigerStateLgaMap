@@ -56,7 +56,7 @@ let ben_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .str0ben {stroke:#373435;stroke-width:1.37;stroke-miterlimit:2.61313}
                 .fil3ben {fill:none}
-                .fil1ben {fill:#E6E7E8}
+                /* .fil1ben {fill:#E6E7E8} */
                 .fil0ben {fill:#848688}
                 .fil2ben {fill:black}
                 .fnt0ben {font-weight:bold;font-size:38.5px;font-family:'Arial'}
@@ -127,4 +127,13 @@ let ben_sketch = `
      benue.sketchMap(ben_sketch)            
  $(document).ready(function(){    
      benue.CalMap(benue.propertyMaker());
+     benue.modProperty(`${ben_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  benue.setProperty('upColor',"#E1F3FC")
  })

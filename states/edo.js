@@ -54,7 +54,7 @@ let edo_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1edo {fill:#E6E7E8}
+                /* .fil1edo {fill:#E6E7E8} */
                 .fil3edo {fill:#373435}
                 .fil0edo {fill:#434041}
                 .fil2edo {fill:#373435;fill-rule:nonzero}
@@ -163,4 +163,13 @@ let edo_sketch = `
      edo.sketchMap(edo_sketch)            
  $(document).ready(function(){    
      edo.CalMap(edo.propertyMaker());
+     edo.modProperty(`${edo_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  edo.setProperty('upColor',"#E1F3FC")
  })

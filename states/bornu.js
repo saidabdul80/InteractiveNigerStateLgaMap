@@ -56,7 +56,7 @@ let bor_sketch = `
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .str0bor {stroke:black;stroke-width:1.4;stroke-miterlimit:2.61313}
                 .fil2bor {fill:none}
-                .fil1bor {fill:#E6E7E8}
+                /* .fil1bor {fill:#E6E7E8} */
                 .fil0bor {fill:#96989A}
                 .fil3bor {fill:black}
                 .fnt0bor {font-weight:bold;font-size:39.33px;font-family:'Arial'}
@@ -144,4 +144,13 @@ let bor_sketch = `
      bornu.sketchMap(bor_sketch)            
  $(document).ready(function(){    
      bornu.CalMap(bornu.propertyMaker());
+     bornu.modProperty(`${bor_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  bornu.setProperty('upColor',"#E1F3FC")
  })

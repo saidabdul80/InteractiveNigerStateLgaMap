@@ -1,11 +1,11 @@
-//width:100%;height:98vh;"
+//"
 let yob_cont_id = "yobeId"
 let yobe_sketch = `
 <h1>YOBE</h1>
      <span id="${yob_cont_id}_jstip" class="jstip"></span>
         <div id="${yob_cont_id}_mapwrapper">
             <div id="${yob_cont_id}_map_base">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1649px" height="1605px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="width:100%;height:98vh;shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
             viewBox="0 0 2428.96 2363.18"
              xmlns:xlink="http://www.w3.org/1999/xlink"
              xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
@@ -43,7 +43,7 @@ let yobe_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1yob {fill:#E6E7E8}
+                /* .fil1yob {fill:#E6E7E8} */
                 .fil0yob {fill:#848688}
                 .fil2yob {fill:#373435}
                 .fnt0yob {font-weight:bold;font-size:73.63px;font-family:'Arial'}
@@ -88,4 +88,13 @@ let yobe_sketch = `
      yobe.sketchMap(yobe_sketch)            
  $(document).ready(function(){    
      yobe.CalMap(yobe.propertyMaker());
+     yobe.modProperty(`${yob_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  yobe.setProperty('upColor',"#E1F3FC")
  })

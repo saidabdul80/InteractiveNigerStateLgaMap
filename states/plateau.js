@@ -52,7 +52,7 @@ viewBox="0 0 2758.3 1954.5"
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-    .fil1pla {fill:#E6E7E8}
+    /* .fil1pla {fill:#E6E7E8} */
     .fil0pla {fill:#848688}
     .fil2pla {fill:#373435}
     .fnt0pla {font-weight:bold;font-size:52.99px;font-family:'Arial'}
@@ -112,4 +112,13 @@ viewBox="0 0 2758.3 1954.5"
      plateau.sketchMap(plateau_sketch)            
  $(document).ready(function(){    
      plateau.CalMap(plateau.propertyMaker());
+     plateau.modProperty(`${pla_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  plateau.setProperty('upColor',"#E1F3FC")
  })

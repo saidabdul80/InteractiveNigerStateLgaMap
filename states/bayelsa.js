@@ -49,7 +49,7 @@ let bay_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1bay {fill:#E6E7E8}
+                /* .fil1bay {fill:#E6E7E8} */
                 .fil0bay {fill:#96989A}
                 .fil2bay {fill:#373435}
                 .fil3bay {fill:#373435;fill-rule:nonzero}
@@ -94,4 +94,13 @@ let bay_sketch = `
      bayelsa.sketchMap(bay_sketch)            
  $(document).ready(function(){    
      bayelsa.CalMap(bayelsa.propertyMaker());
+     bayelsa.modProperty(`${bay_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  bayelsa.setProperty('upColor',"#E1F3FC")
  })

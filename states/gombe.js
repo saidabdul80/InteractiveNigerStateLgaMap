@@ -49,7 +49,7 @@ let gombe_sketch = `
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .str0gom {stroke:#666666;stroke-width:4.11;stroke-miterlimit:2.61313}
-                .fil1gom {fill:#E6E7E8}
+                /* .fil1gom {fill:#E6E7E8} */
                 .fil2gom {fill:#373435}
                 .fil0gom {fill:#666666}
                 .fnt0gom {font-weight:bold;font-size:78.32px;font-family:'Arial'}
@@ -94,4 +94,13 @@ let gombe_sketch = `
      gombe.sketchMap(gombe_sketch)            
  $(document).ready(function(){    
      gombe.CalMap(gombe.propertyMaker());
+     gombe.modProperty(`${gombe_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  gombe.setProperty('upColor',"#E1F3FC")
  })

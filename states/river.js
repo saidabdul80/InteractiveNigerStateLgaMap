@@ -56,7 +56,7 @@ let riv_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1riv {fill:#E6E7E8}
+                /* .fil1riv {fill:#E6E7E8} */
                 .fil0riv {fill:#848688}
                 .fil2riv {fill:#373435}
                 .fnt0riv {font-weight:bold;font-size:36.78px;font-family:'Arial'}
@@ -130,4 +130,14 @@ let riv_sketch = `
      river.sketchMap(riv_sketch)            
  $(document).ready(function(){    
      river.CalMap(river.propertyMaker());
+
+     river.modProperty(`${riv_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  river.setProperty('upColor',"#E1F3FC")
  })

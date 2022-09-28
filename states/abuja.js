@@ -1,5 +1,5 @@
 //"
-let abj_cont_id = "zamfaraId"
+let abj_cont_id = "abujaId"
 let abuja_sketch = `
 <h1></h1>
      <span id="${abj_cont_id}_jstip" class="jstip"></span>
@@ -42,7 +42,7 @@ let abuja_sketch = `
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
                 .fil2abj {fill:#373435}
-                .fil1abj {fill:#E5E8E8}
+                /* .fil1abj {fill:#E5E8E8} */
                 .fil0abj {fill:#363435}
                 .fnt0abj {font-weight:bold;font-size:111.06px;font-family:'Arial'}
                ]]>
@@ -78,4 +78,13 @@ let abuja_sketch = `
      abuja.sketchMap(abuja_sketch)            
  $(document).ready(function(){    
      abuja.CalMap(abuja.propertyMaker());
+     abuja.modProperty(`${cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  abuja.setProperty('upColor',"#E1F3FC")
  })

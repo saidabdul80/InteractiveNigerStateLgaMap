@@ -46,7 +46,7 @@ let keb_sketch = `
                 @font-face { font-family:"Open Sans Condensed";font-variant:normal;font-style:normal;font-weight:bold;src:url("#${keb_cont_id}_keb_cont_id") format(svg)}
                 .kebstr0 {stroke:#858474;stroke-width:34.26;stroke-miterlimit:2.61313}
                 .kebfil1 {fill:#373435}
-                .kebfil0 {fill:#FFFBD6}
+                /* .kebfil0 {fill:#FFFBD6} */
                 .kebfnt0 {font-weight:bold;font-size:222.94px;font-family:'Open Sans Condensed'}
                 .kebfnt1 {font-weight:bold;font-size:222.95px;font-family:'Open Sans Condensed'}
                ]]>
@@ -115,4 +115,13 @@ let keb_sketch = `
      kebbi.sketchMap(keb_sketch)            
  $(document).ready(function(){    
      kebbi.CalMap(kebbi.propertyMaker());
+     kebbi.modProperty(`${keb_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  kebbi.setProperty('upColor',"#E1F3FC")
  })

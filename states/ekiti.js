@@ -50,7 +50,7 @@ let eki_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1eki {fill:#E6E7E8}
+                /* .fil1eki {fill:#E6E7E8} */
                 .fil2eki {fill:#373435}
                 .fil0eki {fill:#383536}
                 .fnt0eki {font-weight:bold;font-size:37.23px;font-family:'Arial'}
@@ -105,4 +105,13 @@ let eki_sketch = `
      ekiti.sketchMap(eki_sketch)            
  $(document).ready(function(){    
      ekiti.CalMap(ekiti.propertyMaker());
+     ekiti.modProperty(`${eki_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  ekiti.setProperty('upColor',"#E1F3FC")
  })

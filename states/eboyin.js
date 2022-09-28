@@ -48,7 +48,7 @@ let ebo_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial Rounded MT Bold";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-                .fil1ebo {fill:#E6E7E8}
+                /* .fil1ebo {fill:#E6E7E8} */
                 .fil0ebo {fill:#727376}
                 .fil2ebo {fill:#373435}
                 .fnt0ebo {font-weight:normal;font-size:41.5px;font-family:'Arial Rounded MT Bold'}

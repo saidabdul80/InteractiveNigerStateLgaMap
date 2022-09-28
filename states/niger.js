@@ -50,7 +50,7 @@ let niger_sketch = `
                 .str1nig {stroke:#848688;stroke-width:6.11;stroke-miterlimit:22.9256}
                 .str2nig {stroke:#96989A;stroke-width:2.31;stroke-miterlimit:22.9256}
                 .fil1nig {fill:#373435}
-                .fil0nig {fill:#E1F3FC}
+                /* .fil0nig {fill:#E1F3FC} */
                 .fnt0nig {font-weight:normal;font-size:52.49px;font-family:'Futura Bk BT'}
                ]]>
               </style>
@@ -172,4 +172,13 @@ let niger_sketch = `
      niger.sketchMap(niger_sketch)            
  $(document).ready(function(){    
      niger.CalMap(niger.propertyMaker());
+     niger.modProperty(`${nig_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  niger.setProperty('upColor',"#E1F3FC")
  })

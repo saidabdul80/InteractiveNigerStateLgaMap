@@ -59,7 +59,7 @@ let jigawa_sketch = `
                 .fil2jig {fill:none}
                 .fil3jig {fill:#373435}
                 .fil0jig {fill:#373436}
-                .fil1jig {fill:#E5E6E7}
+                /* .fil1jig {fill:#E5E6E7} */
                 .fnt2jig {font-weight:bold;font-size:29.03px;font-family:'Arial'}
                 .fnt3jig {font-weight:bold;font-size:30.8px;font-family:'Arial'}
                 .fnt1jig {font-weight:bold;font-size:35px;font-family:'Arial'}
@@ -151,4 +151,13 @@ let jigawa_sketch = `
      jigawa.sketchMap(jigawa_sketch)            
  $(document).ready(function(){    
      jigawa.CalMap(jigawa.propertyMaker());
+     jigawa.modProperty(`${jig_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  jigawa.setProperty('upColor',"#E1F3FC")
  })

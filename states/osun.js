@@ -53,7 +53,7 @@ let osun_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1 {fill:#E6E7E8}
+                /* .fil1 {fill:#E6E7E8} */
                 .fil2 {fill:#373435}
                 .fil0 {fill:#383535}
                 .fnt10 {font-weight:bold;font-size:26.61px;font-family:'Arial'}
@@ -170,4 +170,13 @@ let osun_sketch = `
      osun.sketchMap(osun_sketch)            
  $(document).ready(function(){    
      osun.CalMap(osun.propertyMaker());
+     osun.modProperty(`${osun_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  osun.setProperty('upColor',"#E1F3FC")
  })

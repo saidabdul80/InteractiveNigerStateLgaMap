@@ -47,7 +47,7 @@ kts_sketch = `
                 @font-face { font-family:"Open Sans Condensed";font-variant:normal;font-style:normal;font-weight:bold;src:url("#${kts_cont_id}_FontID0") format(svg)}
                 .ktsstr0 {stroke:#BDBFC1;stroke-width:19.2;stroke-miterlimit:2.61313}
                 .ktsfil1 {fill:#373435}
-                .ktsfil0 {fill:#FFFBD6}
+                /* .ktsfil0 {fill:#FFFBD6} */
                 .ktsfnt2 {font-weight:bold;font-size:88.41px;font-family:'Open Sans Condensed'}
                 .ktsfnt1 {font-weight:bold;font-size:109.79px;font-family:'Open Sans Condensed'}
                 .ktsfnt0 {font-weight:bold;font-size:119.25px;font-family:'Open Sans Condensed'}
@@ -136,4 +136,13 @@ kts_sketch = `
      katsina.sketchMap(kts_sketch)            
  $(document).ready(function(){    
     katsina.CalMap(katsina.propertyMaker());
+    katsina.modProperty(`${kts_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  katsina.setProperty('upColor',"#E1F3FC")
  })

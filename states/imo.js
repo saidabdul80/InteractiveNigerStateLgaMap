@@ -54,7 +54,7 @@ let imo_sketch = `
               <style type="text/css">
                <![CDATA[
                 @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-                .fil1imo {fill:#E6E7E8}
+                /* .fil1imo {fill:#E6E7E8} */
                 .fil0imo {fill:#96989A}
                 .fil2imo {fill:#373435}
                 .fnt0imo {font-weight:bold;font-size:29.31px;font-family:'Arial'}
@@ -143,4 +143,13 @@ let imo_sketch = `
      imo.sketchMap(imo_sketch)            
  $(document).ready(function(){    
      imo.CalMap(imo.propertyMaker());
+     imo.modProperty(`${imo_cont_id}_ngjs1`,"hover",`
+     <ul>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+         <li>Climate Change: 20%</li>
+     </ul>
+  `);
+  imo.setProperty('upColor',"#E1F3FC")
  })
