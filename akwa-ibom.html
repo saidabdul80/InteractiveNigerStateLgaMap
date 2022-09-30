@@ -15,79 +15,136 @@
 <div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
     <select id="selectD">
         <option value=""></option>
-        <option value="Aro">Arochukwu	</option>
-        <option value="Ini">Ini	</option>
-        <option value="Obi">Obi Ngwa	</option>
-        <option value="Umus">Umuahia South	</option>
-        <option value="Umun">Umuahia North	</option>
-        <option value="Ikw">Ikwuano	</option>
-        <option value="Isi">Isiukwato	</option>
-        <option value="Ukww">Ukwa West	</option>
-        <option value="Abas">Aba South	</option>
-        <option value="Aban">Aba North	</option>
-        <option value="Isin">Isiala Ngwa North	</option>
-        <option value="Isis">Isiala Ngwa South	</option>
-        <option value="Obi">Obingwa	</option>
-        <option value="Umunn">Umunneochi	</option>
-        <option value="Ugw">Ugwunagbo	</option>
-        <option value="Ukw">Ukwa </option>       
+        <option value="Abak">Abak</option>
+<option value="Eastern Obolo">Eastern Obolo</option>
+<option value="Eket">Eket</option>
+<option value="Esit Eket">Esit Eket</option>
+<option value="Essien Udim">Essien Udim</option>
+<option value="Etim Ekpo">Etim Ekpo</option>
+<option value="Etinan">Etinan</option>
+<option value="Ibeno">Ibeno</option>
+<option value="Ibesikpo Asutan">Ibesikpo Asutan</option>
+<option value="Ibiono-Ibom">Ibiono-Ibom</option>
+<option value="Ika">Ika</option>
+<option value="Ikono">Ikono</option>
+<option value="Ikot Ekpene">Ikot Ekpene</option>
+<option value="Ikot-Abasi">Ikot-Abasi</option>
+<option value="Ini">Ini</option>
+<option value="Itu">Itu</option>
+<option value="Mbo">Mbo</option>
+<option value="Mkpat-Enin">Mkpat-Enin</option>
+<option value="Nsit-Atai">Nsit-Atai</option>
+<option value="Nsit-Ibom">Nsit-Ibom</option>
+<option value="Nsit-Ubium">Nsit-Ubium</option>
+<option value="Obot-Akara">Obot-Akara</option>
+<option value="Okobo ">Okobo </option>
+<option value="Onna">Onna</option>
+<option value="Oron">Oron</option>
+<option value="Oruk Anam">Oruk Anam</option>
+<option value="Udung-Uko">Udung-Uko</option>
+<option value="Ukanafun">Ukanafun</option>
+<option value="Uruan">Uruan</option>
+<option value="Urue-Offong/Oruko">Urue-Offong/Oruko</option>
+<option value="Uyo">Uyo</option>
     </select>
     <div id="output" style="padding:20px"></div>
 </div>
 <script>
-    let aData = {
-        "Aro":{
-            "Climate Change": "30%",
-            "Climate Change2": "30%",
-            "Climate Change3": "30%",
+    let aData = {        
+        "Abak":{
+
+        },
+        "Eastern Obolo":{
+
+        },
+        "Eket":{
+
+        },
+        "Esit Eket":{
+
+        },
+        "Essien Udim":{
+
+        },
+        "Etim Ekpo":{
+
+        },
+        "Etinan":{
+
+        },
+        "Ibeno":{
+
+        },
+        "Ibesikpo Asutan":{
+
+        },
+        "Ibiono-Ibom":{
+
+        },
+        "Ika":{
+
+        },
+        "Ikono":{
+
+        },
+        "Ikot Ekpene":{
+
+        },
+        "Ikot-Abasi":{
+
         },
         "Ini":{
-            "Climate Change": "30%",
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Itu":{
+
         },
-        "Umus":{
-            "Climate Change": "30%",
+        "Mbo":{
+
         },
-        "Umun":{
-            "Climate Change": "30%",
+        "Mkpat-Enin":{
+
         },
-        "Ikw":{
-            "Climate Change": "30%",
+        "Nsit-Atai":{
+
         },
-        "Isi":{
-            "Climate Change": "30%",
+        "Nsit-Ibom":{
+
         },
-        "Ukww":{
-            "Climate Change": "30%",
+        "Nsit-Ubium":{
+
         },
-        "Abas":{
-            "Climate Change": "30%",
+        "Obot-Akara":{
+
         },
-        "Aban":{
-            "Climate Change": "30%",
+        "Okobo ":{
+
         },
-        "Isin":{
-            "Climate Change": "30%",
+        "Onna":{
+
         },
-        "Isis":{
-            "Climate Change": "30%",
+        "Oron":{
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Oruk Anam":{
+
         },
-        "Umunn":{
-            "Climate Change": "30%",
+        "Udung-Uko":{
+
         },
-        "Ugw":{
-            "Climate Change": "30%",
+        "Ukanafun":{
+
         },
-        "Ukw":{
-            "Climate Change": "30%",
+        "Uruan":{
+
+        },
+        "Urue-Offong/Oruko":{
+
+        },
+        "Uyo":{
+
         },
     }
-
     $(document).ready(function(){
         $("#selectD").change(function(){
             let arr = aData[$(this).val()]            

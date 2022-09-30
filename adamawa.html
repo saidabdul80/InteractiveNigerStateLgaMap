@@ -6,88 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
-    <script type="text/javascript" src="states/lib/jquery.js"></script>	
-	<script type="text/javascript" src="states/lib/map.js"></script>
+    <script type="text/javascript" src="states/lib/jquery.js"></script>
+<script type="text/javascript" src="states/lib/map.js"></script>
 </head><body>
 <div id="adamawaId"></div>
     <script type="text/javascript" src="states/adamawa.js"></script>    
 <link rel="stylesheet" type="text/css" href="states/lib/color.css">
 <div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
     <select id="selectD">
-        <option value=""></option>
-        <option value="Aro">Arochukwu	</option>
-        <option value="Ini">Ini	</option>
-        <option value="Obi">Obi Ngwa	</option>
-        <option value="Umus">Umuahia South	</option>
-        <option value="Umun">Umuahia North	</option>
-        <option value="Ikw">Ikwuano	</option>
-        <option value="Isi">Isiukwato	</option>
-        <option value="Ukww">Ukwa West	</option>
-        <option value="Abas">Aba South	</option>
-        <option value="Aban">Aba North	</option>
-        <option value="Isin">Isiala Ngwa North	</option>
-        <option value="Isis">Isiala Ngwa South	</option>
-        <option value="Obi">Obingwa	</option>
-        <option value="Umunn">Umunneochi	</option>
-        <option value="Ugw">Ugwunagbo	</option>
-        <option value="Ukw">Ukwa </option>       
+        <optoin value="Demsa">Demsa</optoin>
+        <optoin value="Fufore">Fufore</optoin>
+        <optoin value="Ganye">Ganye</optoin>
+        <optoin value="Girei">Girei</optoin>
+        <optoin value="Gombi">Gombi</optoin>
+        <optoin value="Michika">Michika</optoin>
+        <optoin value="Toungo">Toungo</optoin>
+        <optoin value="Mayo-Belwa">Mayo-Belwa</optoin>
+        <optoin value="Mubi South">Mubi South</optoin>
+        <optoin value="Madagali">Madagali</optoin>
+        <optoin value="Numan">Numan</optoin>
+        <optoin value="Maiha">Maiha</optoin>
+        <optoin value="Guyuk">Guyuk</optoin>
+        <optoin value="Song">Song</optoin>
+        <optoin value="Jada">Jada</optoin>
+        <optoin value="Shelleng">Shelleng</optoin>
+        <optoin value="Hong">Hong</optoin>
+        <optoin value="Yola South">Yola South</optoin>
+        <optoin value="Lamurde">Lamurde</optoin>
+        <optoin value="Yola North">Yola North</optoin>
+        <optoin value="Mubi North">Mubi North</optoin>
     </select>
     <div id="output" style="padding:20px"></div>
 </div>
 <script>
     let aData = {
-        "Aro":{
-            "Climate Change": "30%",
-            "Climate Change2": "30%",
-            "Climate Change3": "30%",
+        "Demsa":{
+
         },
-        "Ini":{
-            "Climate Change": "30%",
+        "Fufore":{
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Ganye":{
+
         },
-        "Umus":{
-            "Climate Change": "30%",
+        "Girei":{
+
         },
-        "Umun":{
-            "Climate Change": "30%",
+        "Gombi":{
+
         },
-        "Ikw":{
-            "Climate Change": "30%",
+        "Michika":{
+
         },
-        "Isi":{
-            "Climate Change": "30%",
+        "Toungo":{
+
         },
-        "Ukww":{
-            "Climate Change": "30%",
+        "Mayo-Belwa":{
+
         },
-        "Abas":{
-            "Climate Change": "30%",
+        "Mubi South":{
+
         },
-        "Aban":{
-            "Climate Change": "30%",
+        "Madagali":{
+
         },
-        "Isin":{
-            "Climate Change": "30%",
+        "Numan":{
+
         },
-        "Isis":{
-            "Climate Change": "30%",
+        "Maiha":{
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Guyuk":{
+
         },
-        "Umunn":{
-            "Climate Change": "30%",
+        "Song":{
+
         },
-        "Ugw":{
-            "Climate Change": "30%",
+        "Jada":{
+
         },
-        "Ukw":{
-            "Climate Change": "30%",
+        "Shelleng":{
+
+        },
+        "Hong":{
+
+        },
+        "Yola South":{
+
+        },
+        "Lamurde":{
+
+        },
+        "Yola North":{
+
+        },
+        "Mubi North":{
+
         },
     }
-
     $(document).ready(function(){
         $("#selectD").change(function(){
             let arr = aData[$(this).val()]            

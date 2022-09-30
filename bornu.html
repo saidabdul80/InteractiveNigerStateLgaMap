@@ -15,79 +15,116 @@
 <div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
     <select id="selectD">
         <option value=""></option>
-        <option value="Aro">Arochukwu	</option>
-        <option value="Ini">Ini	</option>
-        <option value="Obi">Obi Ngwa	</option>
-        <option value="Umus">Umuahia South	</option>
-        <option value="Umun">Umuahia North	</option>
-        <option value="Ikw">Ikwuano	</option>
-        <option value="Isi">Isiukwato	</option>
-        <option value="Ukww">Ukwa West	</option>
-        <option value="Abas">Aba South	</option>
-        <option value="Aban">Aba North	</option>
-        <option value="Isin">Isiala Ngwa North	</option>
-        <option value="Isis">Isiala Ngwa South	</option>
-        <option value="Obi">Obingwa	</option>
-        <option value="Umunn">Umunneochi	</option>
-        <option value="Ugw">Ugwunagbo	</option>
-        <option value="Ukw">Ukwa </option>       
+                <option value="Abadam">Abadam</option>
+        <option value="Askira/Uba">Askira/Uba</option>
+        <option value="Bama">Bama</option>
+        <option value="Bayo">Bayo</option>
+        <option value="Biu">Biu</option>
+        <option value="Chibok">Chibok</option>
+        <option value="Damboa">Damboa</option>
+        <option value="Dikwa">Dikwa</option>
+        <option value="Gubio">Gubio</option>
+        <option value="Guzamala">Guzamala</option>
+        <option value="Gwoza">Gwoza</option>
+        <option value="Hawul">Hawul</option>
+        <option value="Jere">Jere</option>
+        <option value="Kaga">Kaga</option>
+        <option value="Kala/Balge">Kala/Balge</option>
+        <option value="Kukawa">Kukawa</option>
+        <option value="Kwaya Kusar">Kwaya Kusar</option>
+        <option value="Mafa">Mafa</option>
+        <option value="Magumeri">Magumeri</option>
+        <option value="Maiduguri">Maiduguri</option>
+        <option value="Marte">Marte</option>
+        <option value="Mobbar">Mobbar</option>
+        <option value="Monguno">Monguno</option>
+        <option value="Ngala">Ngala</option>
+        <option value="Nganzai">Nganzai</option>
+        <option value="Shani    ">Shani</option>
     </select>
     <div id="output" style="padding:20px"></div>
 </div>
 <script>
     let aData = {
-        "Aro":{
-            "Climate Change": "30%",
-            "Climate Change2": "30%",
-            "Climate Change3": "30%",
+        "Abadam":{
+
         },
-        "Ini":{
-            "Climate Change": "30%",
+        "Askira/Uba":{
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Bama":{
+
         },
-        "Umus":{
-            "Climate Change": "30%",
+        "Bayo":{
+
         },
-        "Umun":{
-            "Climate Change": "30%",
+        "Biu":{
+
         },
-        "Ikw":{
-            "Climate Change": "30%",
+        "Chibok":{
+
         },
-        "Isi":{
-            "Climate Change": "30%",
+        "Damboa":{
+
         },
-        "Ukww":{
-            "Climate Change": "30%",
+        "Dikwa":{
+
         },
-        "Abas":{
-            "Climate Change": "30%",
+        "Gubio":{
+
         },
-        "Aban":{
-            "Climate Change": "30%",
+        "Guzamala":{
+
         },
-        "Isin":{
-            "Climate Change": "30%",
+        "Gwoza":{
+
         },
-        "Isis":{
-            "Climate Change": "30%",
+        "Hawul":{
+
         },
-        "Obi":{
-            "Climate Change": "30%",
+        "Jere":{
+
         },
-        "Umunn":{
-            "Climate Change": "30%",
+        "Kaga":{
+
         },
-        "Ugw":{
-            "Climate Change": "30%",
+        "Kala/Balge":{
+
         },
-        "Ukw":{
-            "Climate Change": "30%",
+        "Kukawa":{
+
+        },
+        "Kwaya Kusar":{
+
+        },
+        "Mafa":{
+
+        },
+        "Magumeri":{
+
+        },
+        "Maiduguri":{
+
+        },
+        "Marte":{
+
+        },
+        "Mobbar":{
+
+        },
+        "Monguno":{
+
+        },
+        "Ngala":{
+
+        },
+        "Nganzai":{
+
+        },
+        "Shani":{
+
         },
     }
-
     $(document).ready(function(){
         $("#selectD").change(function(){
             let arr = aData[$(this).val()]            

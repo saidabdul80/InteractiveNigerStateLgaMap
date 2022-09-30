@@ -14,80 +14,105 @@
 <link rel="stylesheet" type="text/css" href="states/lib/color.css">
 <div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
     <select id="selectD">
-        <option value=""></option>
-        <option value="Aro">Arochukwu	</option>
-        <option value="Ini">Ini	</option>
-        <option value="Obi">Obi Ngwa	</option>
-        <option value="Umus">Umuahia South	</option>
-        <option value="Umun">Umuahia North	</option>
-        <option value="Ikw">Ikwuano	</option>
-        <option value="Isi">Isiukwato	</option>
-        <option value="Ukww">Ukwa West	</option>
-        <option value="Abas">Aba South	</option>
-        <option value="Aban">Aba North	</option>
-        <option value="Isin">Isiala Ngwa North	</option>
-        <option value="Isis">Isiala Ngwa South	</option>
-        <option value="Obi">Obingwa	</option>
-        <option value="Umunn">Umunneochi	</option>
-        <option value="Ugw">Ugwunagbo	</option>
-        <option value="Ukw">Ukwa </option>       
+        <option value=""></option> 
+        <option value="Ado">Ado</option>
+        <option value="Agatu">Agatu</option>
+        <option value="Apa">Apa</option>
+        <option value="Buruku">Buruku</option>
+        <option value="Gboko">Gboko</option>
+        <option value="Guma">Guma</option>
+        <option value="Gwer East">Gwer East</option>
+        <option value="Gwer West">Gwer West</option>
+        <option value="Katsina-Ala">Katsina-Ala</option>
+        <option value="Konshisha">Konshisha</option>
+        <option value="Kwande">Kwande</option>
+        <option value="Logo">Logo</option>
+        <option value="Makurdi">Makurdi</option>
+        <option value="Obi">Obi</option>
+        <option value="Ogbadibo">Ogbadibo</option>
+        <option value="Ohimini">Ohimini</option>
+        <option value="Oju">Oju</option>
+        <option value="Okpokwu">Okpokwu</option>
+        <option value="Otukpo">Otukpo</option>
+        <option value="Tarka">Tarka</option>
+        <option value="Ukum">Ukum</option>
+        <option value="Ushongo">Ushongo</option>
+        <option value="Vandeikya">Vandeikya</option>
     </select>
     <div id="output" style="padding:20px"></div>
 </div>
 <script>
     let aData = {
-        "Aro":{
-            "Climate Change": "30%",
-            "Climate Change2": "30%",
-            "Climate Change3": "30%",
+        "Ado":{
+            
         },
-        "Ini":{
-            "Climate Change": "30%",
+        "Agatu":{
+            
+        },
+        "Apa":{
+            
+        },
+        "Buruku":{
+            
+        },
+        "Gboko":{
+            
+        },
+        "Guma":{
+            
+        },
+        "Gwer East":{
+            
+        },
+        "Gwer West":{
+            
+        },
+        "Katsina-Ala":{
+            
+        },
+        "Konshisha":{
+            
+        },
+        "Kwande":{
+            
+        },
+        "Logo":{
+            
+        },
+        "Makurdi":{
+            
         },
         "Obi":{
-            "Climate Change": "30%",
+            
         },
-        "Umus":{
-            "Climate Change": "30%",
+        "Ogbadibo":{
+            
         },
-        "Umun":{
-            "Climate Change": "30%",
+        "Ohimini":{
+            
         },
-        "Ikw":{
-            "Climate Change": "30%",
+        "Oju":{
+            
         },
-        "Isi":{
-            "Climate Change": "30%",
+        "Okpokwu":{
+            
         },
-        "Ukww":{
-            "Climate Change": "30%",
+        "Otukpo":{
+            
         },
-        "Abas":{
-            "Climate Change": "30%",
+        "Tarka":{
+            
         },
-        "Aban":{
-            "Climate Change": "30%",
+        "Ukum":{
+            
         },
-        "Isin":{
-            "Climate Change": "30%",
+        "Ushongo":{
+            
         },
-        "Isis":{
-            "Climate Change": "30%",
-        },
-        "Obi":{
-            "Climate Change": "30%",
-        },
-        "Umunn":{
-            "Climate Change": "30%",
-        },
-        "Ugw":{
-            "Climate Change": "30%",
-        },
-        "Ukw":{
-            "Climate Change": "30%",
+        "Vandeikya":{
+            
         },
     }
-
     $(document).ready(function(){
         $("#selectD").change(function(){
             let arr = aData[$(this).val()]            
