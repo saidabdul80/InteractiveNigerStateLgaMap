@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
+    <script type="text/javascript" src="states/lib/jquery.js"></script>	
+	<script type="text/javascript" src="states/lib/map.js"></script>
+</head><body>
+<div id="lagosId"></div>
+    <script type="text/javascript" src="states/lagos.js"></script>    
+<link rel="stylesheet" type="text/css" href="states/lib/color.css">
+<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
+    <select id="selectD">
+        <option value=""></option>
+        <option value="Aboh Mbaise">Aboh Mbaise</option>
+        <option value="Ahiazu Mbaise">Ahiazu Mbaise</option>
+        <option value="Ehime Mbano">Ehime Mbano</option>
+        <option value="Ezinihitte Mbaise">Ezinihitte Mbaise</option>
+        <option value="Ideato North">Ideato North</option>
+        <option value="Ideato South">Ideato South</option>
+        <option value="Ihitte/Uboma">Ihitte/Uboma</option>
+        <option value="Ikeduru">Ikeduru</option>
+        <option value="Isiala Mbano">Isiala Mbano</option>
+        <option value="Isu">Isu</option>
+        <option value="Mbaitoli">Mbaitoli</option>
+        <option value="Ngor Okpala">Ngor Okpala</option>
+        <option value="Njaba">Njaba</option>
+        <option value="Nkwerre">Nkwerre</option>
+        <option value="Nwangele">Nwangele</option>
+        <option value="Obowo">Obowo</option>
+        <option value="Oguta">Oguta</option>
+        <option value="Ohaji/Egbema">Ohaji/Egbema</option>
+        <option value="Okigwe">Okigwe</option>
+        <option value="Onuimo">Onuimo</option>
+        <option value="Orlu">Orlu</option>
+        <option value="Orsu">Orsu</option>
+        <option value="Oru East">Oru East</option>
+        <option value="Oru West">Oru West</option>
+        <option value="Owerri Municipal">Owerri Municipal</option>
+        <option value="Owerri North">Owerri North</option>
+        <option value="Owerri West"        >Owerri West</option>
+    </select>
+    <div id="output" style="padding:20px"></div>
+</div>
+<script>
+    let aData ={
+        "Aboh Mbaise":{
+
+        },
+        "Ahiazu Mbaise":{
+
+        },
+        "Ehime Mbano":{
+
+        },
+        "Ezinihitte Mbaise":{
+
+        },
+        "Ideato North":{
+
+        },
+        "Ideato South":{
+
+        },
+        "Ihitte/Uboma":{
+
+        },
+        "Ikeduru":{
+
+        },
+        "Isiala Mbano":{
+
+        },
+        "Isu":{
+
+        },
+        "Mbaitoli":{
+
+        },
+        "Ngor Okpala":{
+
+        },
+        "Njaba":{
+
+        },
+        "Nkwerre":{
+
+        },
+        "Nwangele":{
+
+        },
+        "Obowo":{
+
+        },
+        "Oguta":{
+
+        },
+        "Ohaji/Egbema":{
+
+        },
+        "Okigwe":{
+
+        },
+        "Onuimo":{
+
+        },
+        "Orlu":{
+
+        },
+        "Orsu":{
+
+        },
+        "Oru East":{
+
+        },
+        "Oru West":{
+
+        },
+        "Owerri Municipal":{
+
+        },
+        "Owerri North":{
+
+        },
+        "Owerri West":{
+
+        },
+    }
+    $(document).ready(function(){
+        $("#selectD").change(function(){
+            let arr = aData[$(this).val()]            
+            let html = "<table><tbody>"
+            Object.keys(arr).forEach((item)=>{                
+                html += `<tr>
+                        <td>${item}</td>
+                        <td>${arr[item]}</td>
+                    </tr>`
+            })
+            html += "</tbody></table>";
+            $("#output").html(html)            
+        })
+
+    })
+</script>
+</body>
+
+</html>
