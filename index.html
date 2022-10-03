@@ -36,6 +36,12 @@
 		cursor: pointer;
 		display: block;
 	}
+
+
+
+
+
+	
 	.dropDownx > ul > li >span{
 		display: block;		
 		padding: 5px 8px;	
@@ -57,6 +63,7 @@
 	} 
 	.dropDownx > ul > li >div >ul{
 		position: relative;
+		padding: 0;
 	}
 	
 	.dropDownx > ul > li:hover > div { /* display lga Container */
@@ -97,8 +104,8 @@
 	.dropDownx > ul > li >div> ul > li> div{
 		color: #2c6;
 		position: absolute;
-		left: 150px;
-		top: -4px;
+		left:  -10px;
+    	top: -100px;
 		border: 1px solid #2c6;		
 		width: 200px;
 		margin: 3px;
@@ -107,18 +114,62 @@
 		background: white;
 		padding: 7px 10px;
 	}
+	
+	.dropDownx{
+		display: none;
+		position: absolute;
+		background-color: white;
+	}
+/* CSS */
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
 </style>
+
+<!-- HTML !-->
+
+<div class="dropContainer">		
+		<button class="dropBtn button-37" role="button">Nigeria</button>
+		<div style="position: relative;">
+			<div class="dropDownx">
+				<ul>			
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div>
 		<div id="containerId"></div>  
     </div>
-	</div>
-<center>
-	<div class="dropDownx">
-		<ul>			
-		</ul>
-	</div>
-</center>
+</div>
 <script>
 
 let data =  [
@@ -292,7 +343,9 @@ let data =  [
 				result += "</tbody></table>"; */
 				Object.keys(data).forEach((item)=>{                
 					Object.keys(data[item]).forEach(inItem=>{
-						html +=`<li> <span>${inItem}</span><div><ul>`
+						html +=`<li> <span>${inItem}</span><div>
+								<h5>L.G.A</h5>
+							<ul>`
 						Object.keys(data[item][inItem]).forEach(inItem2=>{
 							
 							html += `<li><span>${inItem2}</span>
@@ -312,11 +365,16 @@ let data =  [
 									</li>`
 						})
 						html +=`</ul><div> </li>`
-					})					
-					console.log(html)
+					})										
             	})	            
 		$(".dropDownx ul").html(html)
-
+		$(".dropBtn").click(function(){
+			event.stopPropagation();
+			$(".dropDownx").slideToggle()
+		})
+		$("body:not(.dropBtn)").click(function(e){			
+			$(".dropDownx").slideUp()
+		})
     })
 	NiMap('containerId');
 </script> 

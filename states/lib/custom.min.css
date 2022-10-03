@@ -1327,3 +1327,6 @@ textarea {
   svg{
     height: 65vh !important;
   }
+  .svgTextNig{
+    font-size: 1.4em !important;
+  }
