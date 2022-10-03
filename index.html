@@ -8,6 +8,7 @@
 	<meta name="description" content="display all states on Nigerian Map which on hover shows some specify info about the location">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<script type="text/javascript" src="states/lib/nigeria-min.js"></script>	
 	<script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
 </head>
@@ -101,10 +102,16 @@
 	}
 
 </style>
-<div class="dropDownx">
-	<ul>			
-	</ul>
-</div>
+	<div>
+		<div id="containerId"></div>  
+    </div>
+	</div>
+<center>
+	<div class="dropDownx">
+		<ul>			
+		</ul>
+	</div>
+</center>
 <script>
 
 let data =  [
@@ -304,6 +311,7 @@ let data =  [
 		$(".dropDownx ul").html(html)
 
     })
+	NiMap('containerId');
 </script> 
 	<!-- <a class="stateI" href="abia.html" style="display: block;">abia</a>	
 	<a class="stateI" href="abuja.html" style="display: block;">abuja</a>	
