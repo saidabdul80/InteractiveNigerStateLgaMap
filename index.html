@@ -46,7 +46,7 @@
 		color: white;
 	}
 
-	.dropDownx > ul > li >ul{/* lga container */
+	.dropDownx > ul > li >div{/* lga container */
 		position: absolute;
 		display: none;
 		background-color: white;
@@ -54,14 +54,18 @@
 		z-index: 2;
 		box-shadow: 1px 2px 35px -10px #ccc;
 		top: 8px;
+	} 
+	.dropDownx > ul > li >div >ul{
+		position: relative;
 	}
-	.dropDownx > ul > li:hover > ul{ /* display lga Container */
+	
+	.dropDownx > ul > li:hover > div { /* display lga Container */
 		 display: block !important;	
 		 padding: 0px;
 		 background-color: white;	 
 	}
 	
-	.dropDownx > ul > li > ul > li{
+	.dropDownx > ul > li > div> ul > li{
 		color: #2c6;		
 		border: 1px solid #2c6;		
 		width: 200px;
@@ -71,23 +75,26 @@
 		background: white;
 	}	
 
-	.dropDownx > ul > li > ul > li >span{	
+	.dropDownx > ul > li > div>ul > li >span{	
 		display: block;		
 		padding: 8px 10px;	
 	}
 	
-	.dropDownx >ul > li > ul >li> span:hover{
+	.dropDownx >ul > li >div> ul>li> span:hover{
 		background-color: #2c6;
 		color: white;
 	}
-	.dropDownx > ul > li >ul > li >div{
-		position: absolute;
+	.dropDownx > ul > li>div >ul> li{
+		position: relative;
+	}
+	.dropDownx > ul > li>div >ul> li >div{
+		position: relative;
 		display: none;
 	}
-	.dropDownx > ul > li>ul>li:hover > div{
+	.dropDownx > ul > li> div>ul>li:hover > div{
 		display: block !important;		
 	}
-	.dropDownx > ul > li > ul > li> div{
+	.dropDownx > ul > li >div> ul > li> div{
 		color: #2c6;
 		position: absolute;
 		left: 150px;
@@ -285,7 +292,7 @@ let data =  [
 				result += "</tbody></table>"; */
 				Object.keys(data).forEach((item)=>{                
 					Object.keys(data[item]).forEach(inItem=>{
-						html +=`<li> <span>${inItem}</span><ul>`
+						html +=`<li> <span>${inItem}</span><div><ul>`
 						Object.keys(data[item][inItem]).forEach(inItem2=>{
 							
 							html += `<li><span>${inItem2}</span>
@@ -304,7 +311,7 @@ let data =  [
 										</div>
 									</li>`
 						})
-						html +=`</ul> </li>`
+						html +=`</ul><div> </li>`
 					})					
 					console.log(html)
             	})	            
