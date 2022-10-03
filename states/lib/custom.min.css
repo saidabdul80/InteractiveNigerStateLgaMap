@@ -1329,4 +1329,174 @@ textarea {
   }
   .svgTextNig{
     font-size: 1.4em !important;
+    color:#000;
+    z-index: 5;
   }
+
+
+  .dropDownx ul  li{
+    list-style: none;				
+}
+.dropDownx >ul>  li{    
+    color: #2c6;
+    position: relative;
+    border: 1px solid #2c6;		
+    width: 200px;
+    margin: 3px;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+
+
+.dropDownx > ul{
+    padding: 0px;
+}
+.dropDownx > ul > li >span{
+    display: block;		
+    padding: 5px 8px;	
+}
+
+.dropDownx >ul > li >span:hover{
+    background-color: #2c6;
+    color: white;
+}
+
+.dropDownx > ul > li:hover > div {
+     /* display lga Container */
+     display: block !important;	
+     padding: 0px;
+     background-color: white;	 
+}
+
+.dropDownx > ul > li >div{
+    /* lga container */
+    position: absolute;
+    display: none;
+    background-color: white;
+    left: 100px;
+    z-index: 2;
+    box-shadow: 1px 2px 35px -10px #ccc;
+    top: 8px;
+} 
+.dropDownx > ul > li >div >ul{
+    position: relative;
+    padding: 0;
+}
+
+.dropDownx > ul > li > div> ul > li:focus{
+    background-color: #2c6;
+    color: white;
+}
+.dropDownx > ul > li > div> ul > li{
+    color: #2c6;		
+    border: 1px solid #2c6;		
+    width: 200px;
+    margin: 3px auto;
+    cursor: pointer;
+    display: block;
+    background: white;
+}	
+
+.dropDownx > ul > li > div>ul > li >span{	
+    display: block;		
+    padding: 8px 10px;	
+}
+
+.dropDownx >ul > li >div> ul>li> span:hover{
+    background-color: #2c6;
+    color: white;
+}
+.dropDownx > ul > li>div >ul> li{
+    position: relative;
+}
+.dropDownx > ul > li>div >ul> li >div{
+    position: relative;
+    display: none;
+}
+.dropDownx > ul > li> div>ul>li:hover > div{
+    display: block !important;		
+}
+.dropDownx > ul > li >div> ul > li> div{
+    color: #2c6;
+    position: absolute;
+    left:  -10px;
+    top: -100px;
+    border: 1px solid #2c6;		
+    width: 200px;
+    margin: 3px;
+    cursor: pointer;		
+    z-index: 3;
+    background: white;
+    padding: 7px 10px;
+}
+
+.dropDownx{
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+/* CSS */
+.button-37 {
+background-color: #13aa52;
+border: 1px solid #13aa52;
+border-radius: 4px;
+box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+font-size: 16px;
+font-weight: 400;
+outline: none;
+outline: 0;
+padding: 10px 25px;
+text-align: center;
+transform: translateY(0);
+transition: transform 150ms, box-shadow 150ms;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.button-37:hover {
+box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+.button-37 {
+padding: 10px 30px;
+}
+}
+.header-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header-bar:nth-child(2){
+    text-align: right;
+    padding:5px 10px;
+}
+.d-flex{
+    display: flex;    
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 35px;
+    margin: 4px;
+}
+.box1{
+    background-color: #13aa52;
+}
+.box2{
+    background-color: skyblue;    
+}
+.box3{
+    background-color:maroon;
+}

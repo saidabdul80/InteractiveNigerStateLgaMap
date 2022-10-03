@@ -8,139 +8,31 @@
     <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
-</head><body>
-<div id="bornuId"></div>
+</head>
+<body>
+    <div class="header-bar">
+        <div class="dropContainer">		
+            <button class="dropBtn button-37" role="button">Nigeria</button>
+            <div style="position: relative;">
+                <div class="dropDownx">
+                    <ul>			
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1>
+            RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+        </h1>
+        <div style="width: 300px;">
+            description
+        </div>
+    </div>
+
+    <div id="bornuId"></div>
     <script type="text/javascript" src="states/bornu.js"></script>    
-<link rel="stylesheet" type="text/css" href="states/lib/color.css">
-<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
-    <select id="selectD">
-        <option value=""></option>
-                <option value="Abadam">Abadam</option>
-        <option value="Askira/Uba">Askira/Uba</option>
-        <option value="Bama">Bama</option>
-        <option value="Bayo">Bayo</option>
-        <option value="Biu">Biu</option>
-        <option value="Chibok">Chibok</option>
-        <option value="Damboa">Damboa</option>
-        <option value="Dikwa">Dikwa</option>
-        <option value="Gubio">Gubio</option>
-        <option value="Guzamala">Guzamala</option>
-        <option value="Gwoza">Gwoza</option>
-        <option value="Hawul">Hawul</option>
-        <option value="Jere">Jere</option>
-        <option value="Kaga">Kaga</option>
-        <option value="Kala/Balge">Kala/Balge</option>
-        <option value="Kukawa">Kukawa</option>
-        <option value="Kwaya Kusar">Kwaya Kusar</option>
-        <option value="Mafa">Mafa</option>
-        <option value="Magumeri">Magumeri</option>
-        <option value="Maiduguri">Maiduguri</option>
-        <option value="Marte">Marte</option>
-        <option value="Mobbar">Mobbar</option>
-        <option value="Monguno">Monguno</option>
-        <option value="Ngala">Ngala</option>
-        <option value="Nganzai">Nganzai</option>
-        <option value="Shani    ">Shani</option>
-    </select>
-    <div id="output" style="padding:20px"></div>
-</div>
-<script>
-    let aData = {
-        "Abadam":{
 
-        },
-        "Askira/Uba":{
-
-        },
-        "Bama":{
-
-        },
-        "Bayo":{
-
-        },
-        "Biu":{
-
-        },
-        "Chibok":{
-
-        },
-        "Damboa":{
-
-        },
-        "Dikwa":{
-
-        },
-        "Gubio":{
-
-        },
-        "Guzamala":{
-
-        },
-        "Gwoza":{
-
-        },
-        "Hawul":{
-
-        },
-        "Jere":{
-
-        },
-        "Kaga":{
-
-        },
-        "Kala/Balge":{
-
-        },
-        "Kukawa":{
-
-        },
-        "Kwaya Kusar":{
-
-        },
-        "Mafa":{
-
-        },
-        "Magumeri":{
-
-        },
-        "Maiduguri":{
-
-        },
-        "Marte":{
-
-        },
-        "Mobbar":{
-
-        },
-        "Monguno":{
-
-        },
-        "Ngala":{
-
-        },
-        "Nganzai":{
-
-        },
-        "Shani":{
-
-        },
-    }
-    $(document).ready(function(){
-        $("#selectD").change(function(){
-            let arr = aData[$(this).val()]            
-            let html = "<table><tbody>"
-            Object.keys(arr).forEach((item)=>{                
-                html += `<tr>
-                        <td>${item}</td>
-                        <td>${arr[item]}</td>
-                    </tr>`
-            })
-            html += "</tbody></table>";
-            $("#output").html(html)            
-        })
-
-    })
-</script>
+    <link rel="stylesheet" type="text/css" href="states/lib/color.css">
+    <script src="./states/lib/drop.js"></script>
 </body>
 
 </html>

@@ -24,359 +24,70 @@
 		background-color: white;
 		color:#2c6;
 	}
-	.dropDownx ul  li{
-		list-style: none;				
-	}
-	.dropDownx >ul>  li{
-		color: #2c6;
-		position: relative;
-		border: 1px solid #2c6;		
-		width: 200px;
-		margin: 3px;
-		cursor: pointer;
-		display: block;
-	}
 
-
-
-
-
-	
-	.dropDownx > ul > li >span{
-		display: block;		
-		padding: 5px 8px;	
-	}
-	
-	.dropDownx >ul > li >span:hover{
-		background-color: #2c6;
-		color: white;
-	}
-
-	.dropDownx > ul > li >div{/* lga container */
-		position: absolute;
-		display: none;
-		background-color: white;
-		left: 100px;
-		z-index: 2;
-		box-shadow: 1px 2px 35px -10px #ccc;
-		top: 8px;
-	} 
-	.dropDownx > ul > li >div >ul{
-		position: relative;
-		padding: 0;
-	}
-	
-	.dropDownx > ul > li:hover > div { /* display lga Container */
-		 display: block !important;	
-		 padding: 0px;
-		 background-color: white;	 
-	}
-	
-	.dropDownx > ul > li > div> ul > li{
-		color: #2c6;		
-		border: 1px solid #2c6;		
-		width: 200px;
-		margin: 3px auto;
-		cursor: pointer;
-		display: block;
-		background: white;
-	}	
-
-	.dropDownx > ul > li > div>ul > li >span{	
-		display: block;		
-		padding: 8px 10px;	
-	}
-	
-	.dropDownx >ul > li >div> ul>li> span:hover{
-		background-color: #2c6;
-		color: white;
-	}
-	.dropDownx > ul > li>div >ul> li{
-		position: relative;
-	}
-	.dropDownx > ul > li>div >ul> li >div{
-		position: relative;
-		display: none;
-	}
-	.dropDownx > ul > li> div>ul>li:hover > div{
-		display: block !important;		
-	}
-	.dropDownx > ul > li >div> ul > li> div{
-		color: #2c6;
-		position: absolute;
-		left:  -10px;
-    	top: -100px;
-		border: 1px solid #2c6;		
-		width: 200px;
-		margin: 3px;
-		cursor: pointer;		
-		z-index: 3;
-		background: white;
-		padding: 7px 10px;
-	}
-	
-	.dropDownx{
-		display: none;
-		position: absolute;
-		background-color: white;
-	}
-/* CSS */
-.button-37 {
-  background-color: #13aa52;
-  border: 1px solid #13aa52;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  outline: none;
-  outline: 0;
-  padding: 10px 25px;
-  text-align: center;
-  transform: translateY(0);
-  transition: transform 150ms, box-shadow 150ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-37:hover {
-  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-  transform: translateY(-2px);
-}
-
-@media (min-width: 768px) {
-  .button-37 {
-    padding: 10px 30px;
-  }
-}
 </style>
 
-<!-- HTML !-->
-
-<div class="dropContainer">		
-		<button class="dropBtn button-37" role="button">Nigeria</button>
-		<div style="position: relative;">
-			<div class="dropDownx">
-				<ul>			
-				</ul>
+	<div class="header-bar">
+		<div class="dropContainer">		
+			<button class="dropBtn button-37" role="button">Nigeria</button>
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
 			</div>
 		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
 	</div>
-	<div>
-		<div id="containerId"></div>  
-    </div>
+	<script src="./states/lib/drop.js"></script>
+	<div style="display: flex;align-items: end;justify-content: center;">
+			<div id="containerId">
+
+			</div>  
+			<div>
+				<div class="d-flex">
+					<div class="box1 box"></div>Excellent
+				</div>
+				<div class="d-flex">
+					<div class="box2 box"></div>Good
+				</div>
+				<div class="d-flex">
+					<div class="box3 box"></div>Poor
+				</div>
+				
+			</div>
+		</div>	
 </div>
+
 <script>
-
-let data =  [
-		{"Abia":
+	NiMap('containerId',
+		{config:[
 			{
-				"Arochukwu":{					
-					"Climate Change": "30%",
-					"Climate Change2": "30%",
-					"Climate Change3": "30%",        
-				},
-				"Ini":{
-
-				},
-				"Obi Ngwa":{
-
-				},
-				"Umuahia South	":{
-
-				},
-				"Umuahia North":{
-
-				},
-				"Ikwuano":{
-
-				},
-				"Isiukwato	":{
-
-				},
-				"Ukwa West	":{
-
-				},
-				"Aba South	":{
-
-				},
-				"Aba North":{
-
-				},
-				"Isiala Ngwa North	":{
-
-				},
-				"Isiala Ngwa South":{
-
-				},
-				"Obingwa":{
-
-				},
-				"Umunneochi":{
-
-				},
-				"Ugwunagbo":{
-
-				},
-				"Ukwa":{
-
-				},
+				state:1,
+				hover: "<div>3</div>",
+				url: "#",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:2,
+				hover: "<div>3</div>",
+				url: "#",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
 			}
-		},
-		{"Adamawa":[
-			{}
-		]},
-		{"Akwa Ibom":[
-			{}
-		]},
-		{"Anambra":[
-			{}
-		]},
-		{"Bauchi":[
-			{}
-		]},
-		{"Bayelsa":[
-			{}
-		]},
-		{"Benue":[
-			{}
-		]},
-		{"Borno":[
-			{}
-		]},
-		{"River":[
-			{}
-		]},
-		{"Delta":[
-			{}
-		]},
-		{"Ebonyi":[
-			{}
-		]},
-		{"Edo":[
-			{}
-		]},
-		{"Ekiti":[
-			{}
-		]},
-		{"Enugu":[
-			{}
-		]},
-		{"Gombe":[
-			{}
-		]},
-		{"Imo":[
-			{}
-		]},
-		{"Jigawa":[
-			{}
-		]},
-		{"Kaduna":[
-			{}
-		]},
-		{".Kano":[
-			{}
-		]},
-		{".Katsina":[
-			{}
-		]},
-		{".Kebbi":[
-			{}
-		]},
-		{".Kogi":[
-			{}
-		]},
-		{".Kwara":[
-			{}
-		]},
-		{".Lagos":[
-			{}
-		]},
-		{".Nasarawa":[
-			{}
-		]},
-		{".Niger":[
-			{}
-		]},
-		{".Ogun":[
-			{}
-		]},
-		{".Ondo":[
-			{}
-		]},
-		{".Osun":[
-			{}
-		]},
-		{".Oyo":[
-			{}
-		]},
-		{".Plateau":[
-			{}
-		]},
-		{".Rivers":[
-			{}
-		]},
-		{".Sokoto":[
-			{}
-		]},
-		{".Taraba":[
-			{}
-		]},
-		{".Yobe":[
-			{}
-		]},
-		{".Zamfara":[
-			{}
-		]},
-		{".Abuja":[
-			{}
-		]},
-	]
-		$(document).ready(function(){	
-			let html ="" 		            
-            let result = "<table><tbody>"
-				/* `
-				result += "</tbody></table>"; */
-				Object.keys(data).forEach((item)=>{                
-					Object.keys(data[item]).forEach(inItem=>{
-						html +=`<li> <span>${inItem}</span><div>
-								<h5>L.G.A</h5>
-							<ul>`
-						Object.keys(data[item][inItem]).forEach(inItem2=>{
-							
-							html += `<li><span>${inItem2}</span>
-										<div>
-											<table>
-												<tbody>`
-							Object.keys(data[item][inItem][inItem2]).forEach(inItem3=>{
-							html += 				`<tr>
-														<td>${inItem3}</td>
-														<td>${data[item][inItem][inItem2][inItem3]}</td>
-													</tr>`
-							})
-							html+=`
-												</tbody>
-											</table>
-										</div>
-									</li>`
-						})
-						html +=`</ul><div> </li>`
-					})										
-            	})	            
-		$(".dropDownx ul").html(html)
-		$(".dropBtn").click(function(){
-			event.stopPropagation();
-			$(".dropDownx").slideToggle()
-		})
-		$("body:not(.dropBtn)").click(function(e){			
-			$(".dropDownx").slideUp()
-		})
-    })
-	NiMap('containerId');
+		]
+	}
+	);
 </script> 
 	<!-- <a class="stateI" href="abia.html" style="display: block;">abia</a>	
 	<a class="stateI" href="abuja.html" style="display: block;">abuja</a>	
