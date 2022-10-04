@@ -1329,7 +1329,8 @@ textarea {
   }
   .svgTextNig{
     font-size: 1.4em !important;
-    color:#000;
+    color:#fff !important;
+    fill:#fff;
     z-index: 5;
   }
 
