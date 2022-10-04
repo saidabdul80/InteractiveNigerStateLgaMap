@@ -2431,4 +2431,11 @@ $(".dropBtn").click(function(event){
 $("body:not(.dropBtn)").click(function(e){			
     $(".dropDownx").slideUp()
 })
+
+$("#SearchBox").on("keyup", function () {
+    val = $(this).val().toLowerCase();
+    $(".dropDownx > ul > li >span").each(function () {
+      $(this).parent().toggle($(this).text().toLowerCase().includes(val));
+    });
+});
 })
