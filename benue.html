@@ -9,29 +9,58 @@
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
 </head><body>
-    <div class="header-bar">
-        <div class="dropContainer">		
-            <button class="dropBtn button-37" role="button">Nigeria</button>
-            <div style="position: relative;">
-                <div class="dropDownx">
-                    <ul>			
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <h1>
-            RESEARCH RESULT OF CLIMATE CHANGE IN BENUE
-        </h1>
-        <div style="width: 300px;">
-            description
-        </div>
-    </div>
-    <script src="./states/lib/drop.js"></script>
-
 <div id="benueId"></div>
-<script type="text/javascript" src="states/benue.js"></script>    
+    <script type="text/javascript" src="states/benue.js"></script>    
 <link rel="stylesheet" type="text/css" href="states/lib/color.css">
+<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
+    <select id="selectD">
+        <option value=""></option> 
+        <option value="Ado">Ado</option>
+        <option value="Agatu">Agatu</option>
+        <option value="Apa">Apa</option>
+        <option value="Buruku">Buruku</option>
+        <option value="Gboko">Gboko</option>
+        <option value="Guma">Guma</option>
+        <option value="Gwer East">Gwer East</option>
+        <option value="Gwer West">Gwer West</option>
+        <option value="Katsina-Ala">Katsina-Ala</option>
+        <option value="Konshisha">Konshisha</option>
+        <option value="Kwande">Kwande</option>
+        <option value="Logo">Logo</option>
+        <option value="Makurdi">Makurdi</option>
+        <option value="Obi">Obi</option>
+        <option value="Ogbadibo">Ogbadibo</option>
+        <option value="Ohimini">Ohimini</option>
+        <option value="Oju">Oju</option>
+        <option value="Okpokwu">Okpokwu</option>
+        <option value="Otukpo">Otukpo</option>
+        <option value="Tarka">Tarka</option>
+        <option value="Ukum">Ukum</option>
+        <option value="Ushongo">Ushongo</option>
+        <option value="Vandeikya">Vandeikya</option>
+    </select>
+    <div id="output" style="padding:20px"></div>
+</div>
+<script>
+    let aData = {
+       
+    }
+    $(document).ready(function(){
+        $("#selectD").change(function(){
+            let arr = aData[$(this).val()]            
+            let html = "<table><tbody>"
+            Object.keys(arr).forEach((item)=>{                
+                html += `<tr>
+                        <td>${item}</td>
+                        <td>${arr[item]}</td>
+                    </tr>`
+            })
+            html += "</tbody></table>";
+            $("#output").html(html)            
+        })
 
+    })
+</script>
 </body>
 
 </html>

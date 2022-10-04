@@ -24,7 +24,34 @@
 		background-color: white;
 		color:#2c6;
 	}
-
+	ul>li> div>ul>li >div>ul>li >div{
+		display: none;
+		position: relative;
+	}
+	ul>li> div>ul>li >div>ul>li:hover > div{
+		display: block;
+	}
+	.dropDownx > ul > li>div >ul>li>div >ul{
+		padding: 0;
+	}
+	.dropDownx > ul > li>div >ul>li>div >ul>li{
+		position: relative;
+	}
+	.dropDownx > ul > li>div >ul>li>div >ul>li>div{
+    color: #2c6;
+    position: absolute;
+    left:  -25px;
+    top: -70px;
+	box-shadow: 1px 2px 35px -10px #ccc;
+	border-radius: 5px;
+    border: 1px solid #2c6;		
+    width: 250px;    
+    cursor: pointer;		
+    z-index: 3;
+	font-size: 1.2em;
+    background: rgba(255, 255, 255,.9);
+    padding: 10px;
+}
 </style>
 
 	<div class="header-bar">

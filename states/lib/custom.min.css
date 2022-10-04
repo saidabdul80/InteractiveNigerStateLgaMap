@@ -1405,7 +1405,7 @@ textarea {
     padding: 8px 10px;	
 }
 
-.dropDownx >ul > li >div> ul>li> span:hover{
+.dropDownx >ul > li > div> ul>li> span:hover{
     background-color: #2c6;
     color: white;
 }
@@ -1419,20 +1419,30 @@ textarea {
 .dropDownx > ul > li> div>ul>li:hover > div{
     display: block !important;		
 }
-.dropDownx > ul > li >div> ul > li> div{
-    color: #2c6;
-    position: absolute;
-    left:  -10px;
-    top: -100px;
-    border: 1px solid #2c6;		
-    width: 200px;
-    margin: 3px;
-    cursor: pointer;		
-    z-index: 3;
-    background: white;
-    padding: 7px 10px;
+.dropDownx > ul > li >div> ul > li> div {
+    position: absolute;    
 }
 
+.dropDownx > ul > li >div> ul > li> div >ul{
+    position: absolute;
+    left:  150px;
+    top: -20px;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 1px 2px 35px -10px #ccc;
+}
+.dropDownx > ul > li >div> ul > li> div >ul >li{
+    width: 200px;
+    color: #2c6;
+    border: 1px solid #2c6;		
+    margin: 3px;
+    cursor: pointer;		    
+    padding: 7px 10px;
+}
+.dropDownx > ul > li >div> ul > li> div >ul >li:hover{
+    background-color: #2c6;
+	color:white;
+}
 .dropDownx{
     display: none;
     position: absolute;
