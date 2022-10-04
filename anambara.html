@@ -8,57 +8,32 @@
     <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
-</head><body>
-<div id="anambaraId"></div>
-    <script type="text/javascript" src="states/anambara.js"></script>    
-<link rel="stylesheet" type="text/css" href="states/lib/color.css">
-<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
-    <select id="selectD">
-        <option value=""></option>
-        <option value="Aguata">Aguata</option>
-        <option value="Anambra East">Anambra East</option>
-        <option value="Anambra West">Anambra West</option>
-        <option value="Anaocha">Anaocha</option>
-        <option value="Awka North">Awka North</option>
-        <option value="Awka South">Awka South</option>
-        <option value="Ayamelum">Ayamelum</option>
-        <option value="Dunukofia">Dunukofia</option>
-        <option value="Ekwusigo">Ekwusigo</option>
-        <option value="Idemili North">Idemili North</option>
-        <option value="Idemili South">Idemili South</option>
-        <option value="Ihiala">Ihiala</option>
-        <option value="Njikoka">Njikoka</option>
-        <option value="Nnewi North">Nnewi North</option>
-        <option value="Nnewi South">Nnewi South</option>
-        <option value="Ogbaru">Ogbaru</option>
-        <option value="Onitsha North">Onitsha North</option>
-        <option value="Onitsha South">Onitsha South</option>
-        <option value="Orumba North">Orumba North</option>
-        <option value="Orumba South">Orumba South</option>
-        <option value="Oyi">Oyi</option>
-    </select>
-    <div id="output" style="padding:20px"></div>
-</div>
-<script>
-    let aData = {    
-       
-    }
-    $(document).ready(function(){
-        $("#selectD").change(function(){
-            let arr = aData[$(this).val()]            
-            let html = "<table><tbody>"
-            Object.keys(arr).forEach((item)=>{                
-                html += `<tr>
-                        <td>${item}</td>
-                        <td>${arr[item]}</td>
-                    </tr>`
-            })
-            html += "</tbody></table>";
-            $("#output").html(html)            
-        })
+</head>
+<body>
+    <div class="header-bar">
+		<div class="dropContainer">		
+			<input type="text" id="SearchBox" class="dropBtn" placeholder="Search State">
+			<!-- <button class=" button-37" role="button">Nigeria</button> -->
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
+	</div>
+	<script src="./states/lib/drop.js"></script>
 
-    })
-</script>
+    <div id="anambaraId"></div>
+    <script type="text/javascript" src="states/anambara.js"></script>    
+    <link rel="stylesheet" type="text/css" href="states/lib/color.css">
+
 </body>
 
 </html>

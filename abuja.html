@@ -9,59 +9,31 @@
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
 </head>
+<body>
+    <div class="header-bar">
+		<div class="dropContainer">		
+			<input type="text" id="SearchBox" class="dropBtn" placeholder="Search State">
+			<!-- <button class=" button-37" role="button">Nigeria</button> -->
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN ABUJA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
+	</div>
+	<script src="./states/lib/drop.js"></script>
+
     <div id="abujaId"></div>
     <script type="text/javascript" src="states/abuja.js"></script>    
-<link rel="stylesheet" type="text/css" href="states/lib/color.css">
-<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
-    <select id="selectD">
-        <option value=""></option>
-        <option value="Abaji">Abaji</option>
-        <option value="Abuja Municipal">Abuja Municipal</option>
-        <option value="Bwari">Bwari</option>
-        <option value="Gwagwalada">Gwagwalada</option>
-        <option value="Kuje">Kuje</option>
-        <option value="Kwali">Kwali</option>
-    </select>
-    <div id="output" style="padding:20px"></div>
-</div>
-<script>
-    let aData = {
-            "Abaji":{
+    <link rel="stylesheet" type="text/css" href="states/lib/color.css">
 
-            },
-            "Abuja Municipal":{
-
-            },
-            "Bwari":{
-
-            },
-            "Gwagwalada":{
-
-            },
-            "Kuje":{
-
-            },
-            "Kwali":{
-
-            },            
-    }
-
-    $(document).ready(function(){
-        $("#selectD").change(function(){
-            let arr = aData[$(this).val()]            
-            let html = "<table><tbody>"
-            Object.keys(arr).forEach((item)=>{                
-                html += `<tr>
-                        <td>${item}</td>
-                        <td>${arr[item]}</td>
-                    </tr>`
-            })
-            html += "</tbody></table>";
-            $("#output").html(html)            
-        })
-
-    })
-</script>
 </body>
 
 </html>

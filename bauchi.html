@@ -8,58 +8,31 @@
     <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
-</head><body>
-<div id="bauchiId"></div>
+</head>
+<body>
+    <div class="header-bar">
+		<div class="dropContainer">		
+			<input type="text" id="SearchBox" class="dropBtn" placeholder="Search State">
+			<!-- <button class=" button-37" role="button">Nigeria</button> -->
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
+	</div>
+	<script src="./states/lib/drop.js"></script>
+    
+    <div id="bauchiId"></div>
     <script type="text/javascript" src="states/bauchi.js"></script>    
-<link rel="stylesheet" type="text/css" href="states/lib/color.css">
-<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
-    <select id="selectD">
-        <option value=""></option>    
-        <option value="Alkaleri">Alkaleri</option>
-        <option value="Bauchi">Bauchi</option>
-        <option value="Bogoro">Bogoro</option>
-        <option value="Damban">Damban</option>
-        <option value="Darazo">Darazo</option>
-        <option value="Dass">Dass</option>
-        <option value="Gamawa">Gamawa</option>
-        <option value="Ganjuwa">Ganjuwa</option>
-        <option value="Giade">Giade</option>
-        <option value="Itas/Gadau">Itas/Gadau</option>
-        <option value="Jamaare">Jamaare</option>
-        <option value="Katagum">Katagum</option>
-        <option value="Kirfi">Kirfi</option>
-        <option value="Misau">Misau</option>
-        <option value="Ningi">Ningi</option>
-        <option value="Shira">Shira</option>
-        <option value="Tafawa Balewa">Tafawa Balewa</option>
-        <option value="Tipchi">Tipchi</option>
-        <option value="Toro">Toro</option>
-        <option value="Warji">Warji</option>
-        <option value="Zaki   ">Zaki</option>
-    </select>
-    <div id="output" style="padding:20px"></div>
-</div>
-<script>
-    let aData ={
-       
-
-    }
-    $(document).ready(function(){
-        $("#selectD").change(function(){
-            let arr = aData[$(this).val()]            
-            let html = "<table><tbody>"
-            Object.keys(arr).forEach((item)=>{                
-                html += `<tr>
-                        <td>${item}</td>
-                        <td>${arr[item]}</td>
-                    </tr>`
-            })
-            html += "</tbody></table>";
-            $("#output").html(html)            
-        })
-
-    })
-</script>
+    <link rel="stylesheet" type="text/css" href="states/lib/color.css">
 </body>
 
 </html>

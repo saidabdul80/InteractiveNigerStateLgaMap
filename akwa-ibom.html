@@ -8,159 +8,32 @@
     <link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
     <script type="text/javascript" src="states/lib/jquery.js"></script>	
 	<script type="text/javascript" src="states/lib/map.js"></script>
-</head><body>
-<div id="akwaIbomId"></div>
+</head>
+<body>
+    <div class="header-bar">
+		<div class="dropContainer">		
+			<input type="text" id="SearchBox" class="dropBtn" placeholder="Search State">
+			<!-- <button class=" button-37" role="button">Nigeria</button> -->
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
+	</div>
+	<script src="./states/lib/drop.js"></script>
+    
+    <div id="akwaIbomId"></div>
     <script type="text/javascript" src="states/akwa_ibom.js"></script>    
-<link rel="stylesheet" type="text/css" href="states/lib/color.css">
-<div style="width:60%; margin:auto;display: flex;flex-direction: column;align-items: center;padding:10px">
-    <select id="selectD">
-        <option value=""></option>
-        <option value="Abak">Abak</option>
-<option value="Eastern Obolo">Eastern Obolo</option>
-<option value="Eket">Eket</option>
-<option value="Esit Eket">Esit Eket</option>
-<option value="Essien Udim">Essien Udim</option>
-<option value="Etim Ekpo">Etim Ekpo</option>
-<option value="Etinan">Etinan</option>
-<option value="Ibeno">Ibeno</option>
-<option value="Ibesikpo Asutan">Ibesikpo Asutan</option>
-<option value="Ibiono-Ibom">Ibiono-Ibom</option>
-<option value="Ika">Ika</option>
-<option value="Ikono">Ikono</option>
-<option value="Ikot Ekpene">Ikot Ekpene</option>
-<option value="Ikot-Abasi">Ikot-Abasi</option>
-<option value="Ini">Ini</option>
-<option value="Itu">Itu</option>
-<option value="Mbo">Mbo</option>
-<option value="Mkpat-Enin">Mkpat-Enin</option>
-<option value="Nsit-Atai">Nsit-Atai</option>
-<option value="Nsit-Ibom">Nsit-Ibom</option>
-<option value="Nsit-Ubium">Nsit-Ubium</option>
-<option value="Obot-Akara">Obot-Akara</option>
-<option value="Okobo ">Okobo </option>
-<option value="Onna">Onna</option>
-<option value="Oron">Oron</option>
-<option value="Oruk Anam">Oruk Anam</option>
-<option value="Udung-Uko">Udung-Uko</option>
-<option value="Ukanafun">Ukanafun</option>
-<option value="Uruan">Uruan</option>
-<option value="Urue-Offong/Oruko">Urue-Offong/Oruko</option>
-<option value="Uyo">Uyo</option>
-    </select>
-    <div id="output" style="padding:20px"></div>
-</div>
-<script>
-    let aData = {        
-        "Abak":{
+    <link rel="stylesheet" type="text/css" href="states/lib/color.css">
 
-        },
-        "Eastern Obolo":{
-
-        },
-        "Eket":{
-
-        },
-        "Esit Eket":{
-
-        },
-        "Essien Udim":{
-
-        },
-        "Etim Ekpo":{
-
-        },
-        "Etinan":{
-
-        },
-        "Ibeno":{
-
-        },
-        "Ibesikpo Asutan":{
-
-        },
-        "Ibiono-Ibom":{
-
-        },
-        "Ika":{
-
-        },
-        "Ikono":{
-
-        },
-        "Ikot Ekpene":{
-
-        },
-        "Ikot-Abasi":{
-
-        },
-        "Ini":{
-
-        },
-        "Itu":{
-
-        },
-        "Mbo":{
-
-        },
-        "Mkpat-Enin":{
-
-        },
-        "Nsit-Atai":{
-
-        },
-        "Nsit-Ibom":{
-
-        },
-        "Nsit-Ubium":{
-
-        },
-        "Obot-Akara":{
-
-        },
-        "Okobo ":{
-
-        },
-        "Onna":{
-
-        },
-        "Oron":{
-
-        },
-        "Oruk Anam":{
-
-        },
-        "Udung-Uko":{
-
-        },
-        "Ukanafun":{
-
-        },
-        "Uruan":{
-
-        },
-        "Urue-Offong/Oruko":{
-
-        },
-        "Uyo":{
-
-        },
-    }
-    $(document).ready(function(){
-        $("#selectD").change(function(){
-            let arr = aData[$(this).val()]            
-            let html = "<table><tbody>"
-            Object.keys(arr).forEach((item)=>{                
-                html += `<tr>
-                        <td>${item}</td>
-                        <td>${arr[item]}</td>
-                    </tr>`
-            })
-            html += "</tbody></table>";
-            $("#output").html(html)            
-        })
-
-    })
-</script>
 </body>
 
 </html>
