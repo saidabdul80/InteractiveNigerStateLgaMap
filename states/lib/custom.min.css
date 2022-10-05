@@ -1334,7 +1334,7 @@ textarea {
     z-index: 5;
   }
 
-
+  
   .dropDownx ul  li{
     list-style: none;				
 }
@@ -1349,11 +1349,11 @@ textarea {
 }
 
 
-
-
-
 .dropDownx > ul{
     padding: 0px;
+}
+.dropDownx > ul > li {
+    text-align: left;
 }
 .dropDownx > ul > li >span{
     display: block;		
@@ -1365,23 +1365,44 @@ textarea {
     color: white;
 }
 
-.dropDownx > ul > li:hover > div {
+/* .dropDownx > ul > li:hover > div {
      /* display lga Container */
-     display: block !important;	
+     /* display: block !important;	
      padding: 0px;
      background-color: white;	 
+} 
+*/
+.showD{
+    /*  display lga Container  */
+     display: block !important;	
+     padding: 0px;
+     background-color: white;	      
 }
 
 .dropDownx > ul > li >div{
     /* lga container */
     position: absolute;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     background-color: white;
-    left: 100px;
+    /* left: -50px;  */
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    transition:transform 1s cubic-bezier(0, 1.39, 0.79, 0.87) !important;
+    -webkit-transition:transform 1s cubic-bezier(0, 1.39, 0.79, 0.87) !important;
     z-index: 2;
     box-shadow: 1px 2px 35px -10px #ccc;
     top: 8px;
 } 
+
+.lgaShow{
+    /* display: block !important; */
+    visibility: visible !important;
+    /* left: 100px !important; */
+    transform: translateX(100px) !important;
+    -webkit-transform: translateX(100px) !important;
+}
+
 .dropDownx > ul > li >div >ul{
     position: relative;
     padding: 0;
@@ -1410,18 +1431,26 @@ textarea {
     background-color: #2c6;
     color: white;
 }
+
+.highLightD{
+    background-color: #2c6 !important;
+    color: white !important;
+}
+
 .dropDownx > ul > li>div >ul> li{
     position: relative;
 }
 .dropDownx > ul > li>div >ul> li >div{
-    position: relative;
-    display: none;
+    position: relative;    
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0, 1.39, 0.79, 0.87) !important;
+    z-index: 3;
 }
-.dropDownx > ul > li> div>ul>li:hover > div{
-    display: block !important;		
-}
-.dropDownx > ul > li >div> ul > li> div {
-    position: absolute;    
+.showDLga{
+    /* display: block !important; */
+    opacity: 1 !important;
+    transform: scale(1) !important;
 }
 
 .dropDownx > ul > li >div> ul > li> div >ul{
@@ -1432,6 +1461,7 @@ textarea {
     z-index: 3;
     box-shadow: 1px 2px 35px -10px #ccc;
 }
+
 .dropDownx > ul > li >div> ul > li> div >ul >li{
     width: 200px;
     color: #2c6;
@@ -1512,13 +1542,17 @@ padding: 10px 30px;
     background-color:maroon;
 }
 
-ul>li> div>ul>li >div>ul>li >div{
-    display: none;
+ul>li> div>ul>li >div>ul>li >div{    
     position: relative;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0, 1.39, 0.79, 0.87) !important;
+    z-index: 3;
 }
-ul>li> div>ul>li >div>ul>li:hover > div{
+/* ul>li> div>ul>li >div>ul>li:hover > div{
     display: block;
-}
+} */
+
 .dropDownx > ul > li>div >ul>li>div >ul{
     padding: 0;
 }

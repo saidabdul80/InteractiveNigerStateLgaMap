@@ -1,7 +1,6 @@
 //width:100%;height:98vh;"
 let sok_cont_id = "sokotoId"
 let sok_sketch = `
-<h1>SOKOTO</h1>
      <span id="${sok_cont_id}_jstip" class="jstip"></span>
         <div id="${sok_cont_id}_mapwrapper">
             <div id="${sok_cont_id}_map_base">

@@ -1,7 +1,6 @@
 //"
 let oyo_cont_id = "oyoId"
 let oyo_sketch = `
-<h1>OYO STATE</h1>
      <span id="${oyo_cont_id}_jstip" class="jstip"></span>
         <div id="${oyo_cont_id}_mapwrapper">
             <div id="${oyo_cont_id}_map_base">

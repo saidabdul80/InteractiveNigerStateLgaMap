@@ -1,7 +1,6 @@
 //width:100%;height:98vh;"
 let zam_cont_id = "zamfaraId"
 let zam_sketch = `
-<h1>ZAMFARA</h1>
      <span id="${zam_cont_id}_jstip" class="jstip"></span>
         <div id="${zam_cont_id}_mapwrapper">
             <div id="${zam_cont_id}_map_base">

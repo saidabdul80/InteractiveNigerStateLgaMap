@@ -1,7 +1,6 @@
 //"
 let ben_cont_id = "benueId"
 let ben_sketch = `
-<h1>BENUE</h1>
      <span ${ben_cont_id}_jstip" class="jstip"></span>
         <div ${ben_cont_id}_mapwrapper">
             <div ${ben_cont_id}_map_base">

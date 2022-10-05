@@ -1,7 +1,6 @@
 //style="width:100%;height:98vh;"
 let keb_cont_id = "kebbiId"
 let keb_sketch = `
-<h1>KEBBI</h1>
      <span id="${keb_cont_id}_jstip" class="jstip"></span>
         <div id="${keb_cont_id}_mapwrapper">
             <div id="${keb_cont_id}_map_base">

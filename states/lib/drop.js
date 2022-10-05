@@ -49,7 +49,17 @@ let data =  [
 
             },
             "Ukwa":{
-
+                "Climate": {" Change": "30%"},
+                "Climate2": {"Change2": "30%"},
+                "Climate3": {" Change3": "30%"},
+                "Climate4": {" Change3": "30%"},
+                "Climate5": {" Change3": "30%"},
+                "Climate6": {" Change3": "30%"},
+                "Climate7": {" Change3": "30%"},
+                "Climate8": {" Change3": "30%"},
+                "Climate9": {" Change3": "30%"},
+                "Climate10": {" Change3": "30%"},
+                "Climate31": {" Change3": "30%"},
             },
         }
     },
@@ -2423,14 +2433,54 @@ $(document).ready(function(){
                 html +=`</ul><div> </li>`
             })										
         })	            
+
 $(".dropDownx ul").html(html)
+
 $(".dropBtn").click(function(event){
     event.stopPropagation();
     $(".dropDownx").slideToggle()
 })
-$("body:not(.dropBtn)").click(function(e){			
-    $(".dropDownx").slideUp()
+
+$("body").click(function(e){			
+    /* $(".dropDownx").slideUp().not(".header-bar") */
 })
+
+let lgaItemEle = $(".dropDownx > ul > li > div > ul > li > div > ul > li");
+let lgaEle = $(".dropDownx > ul > li> div > ul > li");
+$(".dropDownx>ul>li").not(lgaEle,lgaItemEle).click(function(e){
+    e.stopPropagation()
+    
+    lgaEle.find("div").removeClass("lgaShow")
+    lgaItemEle.find("div").removeClass("showDLga")
+    
+    $(".dropDownx>ul>li>div").removeClass("lgaShow");    
+    $($(this).children()[1]).addClass("lgaShow")
+
+    $(".dropDownx>ul>li").removeClass("highLightD")
+    $(this).addClass("highLightD")
+});
+
+lgaEle.not(lgaItemEle).click(function(e){        
+    e.stopPropagation()
+    console.log(e)
+    lgaEle.find("div").removeClass("showDLga")
+    $($(this).children()[1]).addClass("showDLga")    
+    
+    lgaItemEle.removeClass("highLightD")
+    lgaItemEle.find("div").removeClass("showDLga")
+    
+    lgaEle.removeClass("highLightD")
+    $(this).addClass("highLightD")
+}) 
+
+lgaItemEle.click(function(e){    
+    e.stopPropagation()
+    lgaItemEle.find("div").removeClass("showDLga")
+    $($(this).children()[1]).addClass("showDLga")
+
+    lgaItemEle.removeClass("highLightD")
+    $(this).addClass("highLightD")
+}) 
 
 $("#SearchBox").on("keyup", function () {
     val = $(this).val().toLowerCase();

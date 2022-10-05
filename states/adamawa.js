@@ -1,7 +1,6 @@
 //width:100%;height:98vh;"
 let adamcont_id = "adamawaId"
 let adam_sketch = `
-<h1>ADAMAWA</h1>
      <span id="${adamcont_id}_jstip" class="jstip"></span>
         <div id="${adamcont_id}_mapwrapper">
             <div id="${adamcont_id}_map_base">

@@ -1,7 +1,6 @@
     //"
 let enug_cont_id = "enuguId"
 let enugu_sketch = `
-<h1>ENUGU</h1>
      <span id="${enug_cont_id}_jstip" class="jstip"></span>
         <div id="${enug_cont_id}_mapwrapper">
             <div id="${enug_cont_id}_map_base">

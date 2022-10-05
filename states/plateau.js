@@ -1,7 +1,7 @@
 //"
 let pla_cont_id = "plateauId"
 let plateau_sketch = `
-<h1>PLATEAU</h1>
+
      <span id="${pla_cont_id}_jstip" class="jstip"></span>
         <div id="${pla_cont_id}_mapwrapper">
             <div id="${pla_cont_id}_map_base">

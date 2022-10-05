@@ -1,7 +1,7 @@
 //"
 let abj_cont_id = "abujaId"
 let abuja_sketch = `
-<h1></h1>
+
      <span id="${abj_cont_id}_jstip" class="jstip"></span>
         <div id="${abj_cont_id}_mapwrapper">
             <div id="${abj_cont_id}_map_base">

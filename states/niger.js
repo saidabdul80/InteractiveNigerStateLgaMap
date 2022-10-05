@@ -1,7 +1,6 @@
 //"
 let nig_cont_id = "nigerId"
 let niger_sketch = `
-<h1>NIGER</h1>
      <span id="${nig_cont_id}_jstip" class="jstip"></span>
         <div id="${nig_cont_id}_mapwrapper">
             <div id="${nig_cont_id}_map_base">

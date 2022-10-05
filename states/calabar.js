@@ -1,6 +1,5 @@
 let c_cont_id = "calabarId"
 let c_sketch = `
-<h1>CALABAR</h1>
      <span id="${c_cont_id}_jstip" class="jstip"></span>
         <div id="${c_cont_id}_mapwrapper">
           <div id="${c_cont_id}_map_base">

@@ -1,6 +1,5 @@
 let tar_cont_id = "tarabaId"
 let taraba_sketch = `
-<h1>TARABA</h1>
      <span id="${tar_cont_id}_jstip" class="jstip"></span>
         <div id="${tar_cont_id}_mapwrapper">
             <div id="${tar_cont_id}_map_base">

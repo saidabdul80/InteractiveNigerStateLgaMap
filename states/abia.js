@@ -1,7 +1,6 @@
 //width:100%;height:98vh;"
 let abi_cont_id = "abiaId"
 let abi_sketch = `
-<h1>ABIA</h1>
      <span id="${abi_cont_id}_jstip" class="jstip"></span>
         <div id="${abi_cont_id}_mapwrapper">
             <div id="${abi_cont_id}_map_base">
@@ -54,8 +53,7 @@ let abi_sketch = `
                 .abistr0 {stroke:#373435;stroke-width:1.29;stroke-miterlimit:2.61313}
                 .abifil2 {fill:none}
                 .abifil3 {fill:#373435}
-                .abifil0 {fill:#373435}
-                /* .abifil1 {fill:#E5E6E7} */
+                .abifil0 {fill:#373435}                
                 .abifnt2 {font-weight:bold;font-size:24.51px;font-family:'Arial'}
                 .abifnt1 {font-weight:bold;font-size:25.07px;font-family:'Arial'}
                 .abifnt0 {font-weight:bold;font-size:26.83px;font-family:'Arial'}
@@ -133,5 +131,13 @@ let abi_sketch = `
          <li>Climate Change: 20%</li>
      </ul>
   `);
-  abia.setProperty('upColor',"#E1F3FC")
+
+  abia.setProperty('upColor',"#E1F3FC")  
+  abia.modProperty(`${abi_cont_id}_ngjs6`,"upColor",'green');
+  abia.modProperty(`${abi_cont_id}_ngjs2`,"upColor",'yellow');
+  
+  
+  abia.setProperty("outline", "#660000")
+  abia.setProperty("overColor", "#ffd480")
+
  })

@@ -1,7 +1,6 @@
 //
 let nasa_cont_id = "nasarawaId"
 let nasarawa_sketch = `
-<h1>NASARAWA</h1>
      <span id="${nasa_cont_id}_jstip" class="jstip"></span>
         <div id="${nasa_cont_id}_mapwrapper">
             <div id="${nasa_cont_id}_map_base">

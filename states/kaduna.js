@@ -1,7 +1,6 @@
 //"
 let kad_cont_id = "kadunaId"
 let kad_sketch = `
-<h1>KADUNA</h1>
      <span id="${kad_cont_id}_jstip" class="jstip"></span>
         <div id="${kad_cont_id}_mapwrapper">
             <div id="${kad_cont_id}_map_base">

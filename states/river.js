@@ -1,6 +1,5 @@
 let riv_cont_id = "riverId"
 let riv_sketch = `
-<h1>RIVER</h1>
      <span id="${riv_cont_id}_jstip" class="jstip"></span>
         <div id="${riv_cont_id}_mapwrapper">
             <div id="${riv_cont_id}_map_base">

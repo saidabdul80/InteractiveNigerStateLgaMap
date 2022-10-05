@@ -1,7 +1,6 @@
 //"
 let yob_cont_id = "yobeId"
 let yobe_sketch = `
-<h1>YOBE</h1>
      <span id="${yob_cont_id}_jstip" class="jstip"></span>
         <div id="${yob_cont_id}_mapwrapper">
             <div id="${yob_cont_id}_map_base">

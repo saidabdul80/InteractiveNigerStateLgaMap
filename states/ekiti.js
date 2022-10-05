@@ -1,7 +1,6 @@
 //"
 let eki_cont_id = "ekitiId"
 let eki_sketch = `
-<h1>EKITI</h1>
      <span id="${eki_cont_id}_jstip" class="jstip"></span>
         <div id="${eki_cont_id}_mapwrapper">
             <div id="${eki_cont_id}_map_base">

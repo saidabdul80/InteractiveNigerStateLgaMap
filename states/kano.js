@@ -1,6 +1,5 @@
 let kan_cont_id = "kanoId"
 let k_sketch = `
-<h1>KANO</h1>
      <span id="${kan_cont_id}_jstip" class="jstip"></span>
         <div id="${kan_cont_id}_mapwrapper">
             <div id="${kan_cont_id}_map_base">

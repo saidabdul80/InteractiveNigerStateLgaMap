@@ -1,7 +1,6 @@
 //"
 let edo_cont_id = "edoId"
 let edo_sketch = `
-<h1>EDO</h1>
      <span id="${edo_cont_id}_jstip" class="jstip"></span>
         <div id="${edo_cont_id}_mapwrapper">
             <div id="${edo_cont_id}_map_base">

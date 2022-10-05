@@ -1,7 +1,6 @@
 //
 let kwar_cont_id = "kwaraId"
 let kwara_sketch = `
-<h1>KWARA</h1>
      <span id="${kwar_cont_id}_jstip" class="jstip"></span>
         <div id="${kwar_cont_id}_mapwrapper">
             <div id="${kwar_cont_id}_map_base">

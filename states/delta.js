@@ -1,7 +1,6 @@
 //"
 let del_cont_id = "deltaId"
 let del_sketch = `
-<h1>DELTA</h1>
      <span id="${del_cont_id}_jstip" class="jstip"></span>
         <div id="${del_cont_id}_mapwrapper">
             <div id="${del_cont_id}_map_base">

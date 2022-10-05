@@ -1,6 +1,5 @@
 let gom_cont_id = "gombeId"
 let gombe_sketch = `
-<h1>GOMBE</h1>
      <span id="${gom_cont_id}_jstip" class="jstip"></span>
         <div id="${gom_cont_id}_mapwrapper">
             <div id="${gom_cont_id}_map_base">

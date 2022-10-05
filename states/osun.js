@@ -1,7 +1,6 @@
 //"
 let osun_cont_id = "osunId"
 let osun_sketch = `
-<h1>OSUN</h1>
      <span id="${osun_cont_id}_jstip" class="jstip"></span>
         <div id="${osun_cont_id}_mapwrapper">
             <div id="${osun_cont_id}_map_base">

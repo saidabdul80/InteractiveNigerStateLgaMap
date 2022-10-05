@@ -1,6 +1,5 @@
 let akw_cont_id = "akwaIbomId"
 let akw_sketch = `
-<h1>AKWA IBOM</h1>
      <span id="${akw_cont_id}_jstip" class="jstip"></span>
         <div id="${akw_cont_id}_mapwrapper">
             <div id="${akw_cont_id}_map_base">

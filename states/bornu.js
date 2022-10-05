@@ -1,7 +1,6 @@
 //"
 let bor_cont_id = "bornuId"
 let bor_sketch = `
-
      <span id="${bor_cont_id}_jstip" class="jstip"></span>
         <div id="${bor_cont_id}_mapwrapper">
             <div id="${bor_cont_id}_map_base">

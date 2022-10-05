@@ -1,7 +1,6 @@
 //"
 let kog_cont_id = "kogiId"
 let kog_sketch = `
-<h1>KOGI</h1>
      <span id="${kog_cont_id}_jstip" class="jstip"></span>
         <div id="${kog_cont_id}_mapwrapper">
             <div id="${kog_cont_id}_map_base">

@@ -1,7 +1,6 @@
 //style="width:100%;height:98vh;"
 kts_cont_id = "katsinaId"
 kts_sketch = `
-<h1>KATSINA</h1>
      <span id="${kts_cont_id}_jstip" class="jstip"></span>
         <div id="${kts_cont_id}_mapwrapper">
             <div id="${kts_cont_id}_map_base">

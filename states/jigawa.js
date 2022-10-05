@@ -1,7 +1,6 @@
 //"
 let jig_cont_id = "jigawaId"
 let jigawa_sketch = `
-<h1>JIGAWA</h1>
      <span id="${jig_cont_id}_jstip" class="jstip"></span>
         <div id="${jig_cont_id}_mapwrapper">
             <div id="${jig_cont_id}_map_base">

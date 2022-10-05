@@ -1,7 +1,6 @@
 //"
 let ogu_cont_id = "ogunId"
 let ogu_sketch = `
-<h1>OGUN</h1>
      <span id="${ogu_cont_id}_jstip" class="jstip"></span>
         <div id="${ogu_cont_id}_mapwrapper">
             <div id="${ogu_cont_id}_map_base">

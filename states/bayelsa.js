@@ -1,7 +1,6 @@
 //"
 let bay_cont_id = "bayelsaId"
 let bay_sketch = `
-<h1>BAYELSA</h1>
      <span id="${bay_cont_id}_jstip" class="jstip"></span>
         <div id="${bay_cont_id}_mapwrapper">
             <div id="${bay_cont_id}_map_base">

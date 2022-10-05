@@ -1,7 +1,6 @@
 //"
 let ebo_cont_id = "eboyinId"
 let ebo_sketch = `
-<h1>EBOYIN</h1>
      <span id="${ebo_cont_id}_jstip" class="jstip"></span>
         <div id="${ebo_cont_id}_mapwrapper">
             <div id="${ebo_cont_id}_map_base">

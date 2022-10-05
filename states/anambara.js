@@ -1,7 +1,6 @@
 //"
 let anam_cont_id = "anambaraId"
 let anam_sketch = `
-<h1>ANAMBARA</h1>
      <span id="${anam_cont_id}_jstip" class="jstip"></span>
         <div id="${anam_cont_id}_mapwrapper">
             <div id="${anam_cont_id}_map_base">

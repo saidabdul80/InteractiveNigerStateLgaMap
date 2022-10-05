@@ -1,7 +1,6 @@
 //"
 let imo_cont_id = "imoId"
 let imo_sketch = `
-<h1>IMO</h1>
      <span id="${imo_cont_id}_jstip" class="jstip"></span>
         <div id="${imo_cont_id}_mapwrapper">
             <div id="${imo_cont_id}_map_base">

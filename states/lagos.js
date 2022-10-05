@@ -1,7 +1,6 @@
 //"
 let lagos_cont_id = "lagosId"
 let lagos_sketch = `
-<h1>LAGOS</h1>
      <span id="${lagos_cont_id}_jstip" class="jstip"></span>
         <div id="${lagos_cont_id}_mapwrapper">
             <div id="${lagos_cont_id}_map_base">

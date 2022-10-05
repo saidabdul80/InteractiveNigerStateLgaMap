@@ -1,7 +1,6 @@
 //"
 let ond_cont_id = "ondoId"
 let ondo_sketch = `
-<h1>ONDO</h1>
      <span id="${ond_cont_id}_jstip" class="jstip"></span>
         <div id="${ond_cont_id}_mapwrapper">
             <div id="${ond_cont_id}_map_base">
