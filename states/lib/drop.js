@@ -2447,13 +2447,14 @@ $("body").click(function(e){
 
 let lgaItemEle = $(".dropDownx > ul > li > div > ul > li > div > ul > li");
 let lgaEle = $(".dropDownx > ul > li> div > ul > li");
+
 $(".dropDownx>ul>li").not(lgaEle,lgaItemEle).click(function(e){
     e.stopPropagation()
     
-    lgaEle.find("div").removeClass("lgaShow")
+    lgaEle.find("div").removeClass("showDLga")
     lgaItemEle.find("div").removeClass("showDLga")
     
-    $(".dropDownx>ul>li>div").removeClass("lgaShow");    
+     $(".dropDownx > ul > li > div").removeClass("lgaShow");    
     $($(this).children()[1]).addClass("lgaShow")
 
     $(".dropDownx>ul>li").removeClass("highLightD")
@@ -2462,21 +2463,22 @@ $(".dropDownx>ul>li").not(lgaEle,lgaItemEle).click(function(e){
 
 lgaEle.not(lgaItemEle).click(function(e){        
     e.stopPropagation()
-    console.log(e)
-    lgaEle.find("div").removeClass("showDLga")
-    $($(this).children()[1]).addClass("showDLga")    
+    //console.log(e)
     
     lgaItemEle.removeClass("highLightD")
     lgaItemEle.find("div").removeClass("showDLga")
     
+    lgaEle.find("div").removeClass("showDLga")
     lgaEle.removeClass("highLightD")
+    
+    $(this).children().addClass("showDLga")    
     $(this).addClass("highLightD")
 }) 
 
 lgaItemEle.click(function(e){    
-    e.stopPropagation()
+    e.stopPropagation();
     lgaItemEle.find("div").removeClass("showDLga")
-    $($(this).children()[1]).addClass("showDLga")
+    $(this).children().addClass("showDLga")
 
     lgaItemEle.removeClass("highLightD")
     $(this).addClass("highLightD")
