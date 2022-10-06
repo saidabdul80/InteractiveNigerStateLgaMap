@@ -2,7 +2,10 @@ let data =  [
     {"Abia":
         {
             "Arochukwu":{					
-                "Climate": {" Change": "30%"},
+                "Climate": {
+                    "Change": "30%",
+                    "Wind" :"10%"
+                },
                 "Climate2": {"Change2": "30%"},
                 "Climate3": {" Change3": "30%"},        
             },
@@ -2418,7 +2421,7 @@ $(document).ready(function(){
                             html += `<li><span>${item4}</span><div><table><tbody>`
                                 Object.keys(datax[item4]).forEach(inItem3=>{
                                 html += `<tr>
-                                            <td>${inItem3}</td>
+                                            <td>${inItem3}: </td>
                                             <td>${datax[item4][inItem3]}</td>
                                         </tr>`
                                 })
@@ -2439,6 +2442,11 @@ $(".dropDownx ul").html(html)
 $(".dropBtn").click(function(event){
     event.stopPropagation();
     $(".dropDownx").slideToggle()
+
+    lgaEle.find("div").removeClass("showDLga")
+    lgaItemEle.find("div").removeClass("showDLga")
+    
+     $(".dropDownx > ul > li > div").removeClass("lgaShow");  
 })
 
 $("body").click(function(e){			
